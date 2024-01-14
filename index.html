@@ -13,60 +13,56 @@
         }
 
         header {
-            background-color: #333;
+            background-color: #fff;
             padding: 10px;
             text-align: center;
-            color: white;
+        }
+
+        header img {
+            height: 50px;
         }
 
         nav {
             display: flex;
             justify-content: space-around;
-            background-color: #444;
+            background-color: #fff;
             padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
-            color: white;
+            color: #333;
             text-decoration: none;
             padding: 8px 16px;
-            border-radius: 10px;
-            margin: 0 5px;
-            transition: background-color 0.3s ease;
+            transition: color 0.3s ease;
         }
 
         nav a:hover {
-            background-color: #555;
+            color: #ff7dca;
         }
 
         nav a.prenota {
+            color: #fff;
             background-color: #ff7dca;
+            border-radius: 5px;
         }
 
         main {
             padding: 20px;
-        }
-
-        .riquadro {
-            background-color: white;
-            border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="link_al_tuo_logo.png" alt="Logo" height="50">
-        <h1>Nome del Tuo Sito</h1>
+        <img src="link_al_tuo_logo.png" alt="Logo">
     </header>
 
     <nav>
-        <a href="#" class="riquadro">Esperienze</a>
-        <a href="#" class="riquadro">Come Funziona</a>
-        <a href="#" class="riquadro">Contattaci</a>
-        <a href="#" class="riquadro prenota">Prenota un Viaggio</a>
+        <a href="#">Esperienze</a>
+        <a href="#">Come Funziona</a>
+        <a href="#">Contattaci</a>
+        <a href="#" class="prenota">Prenota un Viaggio</a>
     </nav>
 
     <main>
