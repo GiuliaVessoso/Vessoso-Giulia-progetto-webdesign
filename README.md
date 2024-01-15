@@ -1,4 +1,4 @@
-# Sito-per-esame-
+# sito web di Vessoso Giulia
 progetto esame: All'interno del corso di WebDesign sono andata a realizzare la grafica di un sito mono-pagina.
 prof: Matteo Baccan
 Anno scolastico: 2023-24
