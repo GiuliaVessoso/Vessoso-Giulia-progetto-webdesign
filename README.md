@@ -6,7 +6,7 @@ Vessoso Giulia matricola n 966
 
 Elementi principali:
 zephyr: esplora l'incognito
-siamo un'agenzia che organizza viaggi con destinazioni misteriose, la cui meta si scoprirà solo pochi giorni prima.
+siamo un'agenzia che organizza viaggi con destinazioni misteriose, la cui meta si scoprirà solo pochi giorni prima del viaggio.
 offriamo pacchetti completi di viaggio, collaborando con le comunità locali per favorire le tradizioni del territorio.
 
 elementi descrittivi:
