@@ -15,7 +15,7 @@ L'obiettivo è quello di creare un sito web html responsive che comprendesse i p
 * Nome dell'agenzia
 * Logo dell'agenzia
 * Burger menù per semplificare la navigazione nel sito
-* Descrizione dell'agenzia(chi siamo)
+* Descrizione dell'agenzia (chi siamo)
 * Descrizione dei pacchetti viaggi
 * Sezione form per le prenotazioni
 * Gallery
