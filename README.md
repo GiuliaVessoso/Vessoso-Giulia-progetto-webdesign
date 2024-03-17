@@ -34,3 +34,6 @@ L'obiettivo è quello di creare un sito web html responsive che comprendesse i p
 * CSS
 * JavaScript
 
+
+* netlify:
+* https://zephyr-agenziaviaggi.netlify.app/
