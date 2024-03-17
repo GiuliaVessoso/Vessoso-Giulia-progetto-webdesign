@@ -1,14 +1,36 @@
-# sito web di Vessoso Giulia
-progetto esame: All'interno del corso di WebDesign sono andata a realizzare la grafica di un sito mono-pagina.
-prof: Matteo Baccan
-Anno scolastico: 2023-24
-Vessoso Giulia matricola n 966
+# PROGETTO DI VESSOSO GIULIA: ZEPHYR
+* Progetto d'esame per percorso di Web Design
+* Anno accademico 2023/2024
+* Vessoso Giulia m. 966
+* Indirizzo Graphic Design
+* Prof. Baccan Matteo
+* Corso web design, ACME Novara
 
-Elementi principali:
-zephyr: esplora l'incognito
-siamo un'agenzia che organizza viaggi con destinazioni misteriose, la cui meta si scoprirà solo pochi giorni prima del viaggio.
-offriamo pacchetti completi di viaggio, collaborando con le comunità locali per favorire le tradizioni del territorio.
+ # SCOPO DEL REPOSITORY:
+* Realizzazione di un sito per l'agenzia di viaggi Zephyr
 
-elementi descrittivi:
-ci sono recensioni sui viaggi con le varie testimonianze. vari moduli di contatti per prenotare un viaggio.
+ # ELEMENTI PRINCIPALI DELLA PAGINA:
+L'obiettivo è quello di creare un sito web html responsive che comprendesse i principali elementi della pagina, ovvero:
+
+* Nome dell'agenzia
+* Logo dell'agenzia
+* Burger menù per semplificare la navigazione nel sito
+* Descrizione dell'agenzia(chi siamo)
+* Descrizione dei pacchetti viaggi
+* Sezione form per le prenotazioni
+* Gallery
+* Footer con contatti, orari, copyright e profili social
+* recensioni dei clienti
+* Cookies
+
+# PER RIUSCIRE A REALIZZARLO HO UTILIZZATO:
+* Bootstrap 4.5.2
+* Font-awesome
+* Codepen.io
+* Chat Gpt
+
+# CARATTERISTICHE STRUTTURA ED ELEMENTI PAGINA:
+* Html5
+* CSS
+* JavaScript
 
