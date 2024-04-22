@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenzia Viaggi</title>
+    <title>Homepage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f8f8f8;
         }
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
+            background-color: #fff;
             text-align: center;
+            padding: 20px 0;
         }
         nav {
-            background-color: #444;
-            color: #fff;
+            background-color: #fff;
             text-align: center;
             padding: 10px 0;
         }
@@ -33,32 +32,50 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: #fff;
+            color: #333;
+            transition: color 0.3s ease; /* Aggiungi una transizione per il cambio di colore */
         }
         nav ul li a:hover {
-            text-decoration: underline;
+            color: #ec1c89; /* Cambia il colore al passaggio del mouse */
+        }
+        .logo {
+            margin-bottom: 20px;
         }
         section {
-            padding: 20px;
+            padding: 50px 0;
             text-align: center;
+        }
+        h2 {
+            color: #ec1c89;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .content div {
+            width: 30%;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
         }
         footer {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .logo {
-            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo Agenzia Viaggi" class="logo">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
     </header>
     <nav>
         <ul>
@@ -70,27 +87,63 @@
     </nav>
     <section id="esperienze">
         <h2>Esperienze</h2>
-        <p>Scopri le nostre incredibili esperienze di viaggio!</p>
+        <div class="content">
+            <div>
+                <img src="image1.jpg" alt="Immagine 1">
+                <p>Descrizione Immagine 1</p>
+            </div>
+            <div>
+                <img src="image2.jpg" alt="Immagine 2">
+                <p>Descrizione Immagine 2</p>
+            </div>
+            <div>
+                <img src="image3.jpg" alt="Immagine 3">
+                <p>Descrizione Immagine 3</p>
+            </div>
+        </div>
     </section>
     <section id="come-funziona">
         <h2>Come Funziona</h2>
-        <p>Scopri come funziona il nostro servizio di prenotazione viaggi.</p>
+        <div class="content">
+            <div>
+                <img src="image4.jpg" alt="Immagine 4">
+                <p>Descrizione Immagine 4</p>
+            </div>
+            <div>
+                <img src="image5.jpg" alt="Immagine 5">
+                <p>Descrizione Immagine 5</p>
+            </div>
+            <div>
+                <img src="image6.jpg" alt="Immagine 6">
+                <p>Descrizione Immagine 6</p>
+            </div>
+        </div>
     </section>
     <section id="contattaci">
         <h2>Contattaci</h2>
-        <p>Hai domande? Contattaci!</p>
+        <div class="content">
+            <div>
+                <img src="image7.jpg" alt="Immagine 7">
+                <p>Descrizione Immagine 7</p>
+            </div>
+            <div>
+                <img src="image8.jpg" alt="Immagine 8">
+                <p>Descrizione Immagine 8</p>
+            </div>
+            <div>
+                <img src="image9.jpg" alt="Immagine 9">
+                <p>Descrizione Immagine 9</p>
+            </div>
+        </div>
     </section>
     <section id="prenota-viaggio">
-        <h2>Prenota un Viaggio</h2>
-        <p>Prenota il tuo prossimo viaggio con noi!</p>
+        <div style="background-color: #fff; padding: 50px 0;">
+            <h2>Esplora l'Incognito</h2>
+            <p>Prenota con noi ed esplora mete sconosciute.</p>
+        </div>
     </section>
     <footer>
         <p>&copy; 2024 Agenzia di Viaggi. Tutti i diritti riservati.</p>
     </footer>
 </body>
 </html>
-
-
-   
-    
-    
