@@ -271,12 +271,82 @@
     </section>
     
     <section id="prenota-viaggio">
-        <div style="background-color: #fff; padding: 50px 0;">
-            <h2>Prenota un Viaggio</h2>
-            <p>Pianifica la tua prossima avventura con noi.</p>
-        </div>
-        <!-- Sezione Prenota un Viaggio con un breve testo -->
-    </section>
+    <div class="booking-box">
+        <h2>Prenota un Viaggio a Sorpresa</h2>
+        <p>Pianifica la tua prossima avventura con noi. Compila il modulo sottostante per prenotare un viaggio a sorpresa!</p>
+        <form>
+            <label for="destination">Destinazione a sorpresa:</label>
+            <select id="destination" name="destination">
+                <option value="europe">Europa</option>
+                <option value="asia">Asia</option>
+                <option value="america">America</option>
+            </select>
+            <br><br>
+            <label for="dates">Date di viaggio:</label>
+            <input type="date" id="dates" name="dates">
+            <br><br>
+            <label for="duration">Durata del viaggio:</label>
+            <select id="duration" name="duration">
+                <option value="3days">3 giorni</option>
+                <option value="5days">5 giorni</option>
+                <option value="7days">7 giorni</option>
+            </select>
+            <br><br>
+            <label for="preferences">Preferenze (opzionale):</label>
+            <textarea id="preferences" name="preferences" rows="4" cols="50" placeholder="Inserisci le tue preferenze di viaggio qui..."></textarea>
+            <br><br>
+            <button type="submit">Prenota Ora</button>
+        </form>
+    </div>
+</section>
+
+<style>
+    .booking-box {
+        background-color: #fff;
+        padding: 40px;
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+    .booking-box h2 {
+        color: #ec1c89;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .booking-box label {
+        font-size: 18px;
+        color: #333;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .booking-box select,
+    .booking-box input[type="date"],
+    .booking-box textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .booking-box button {
+        background-color: #ec1c89;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .booking-box button:hover {
+        background-color: #d81b74;
+    }
+</style>
+
     
     <footer>
         <p>&copy; 2024 Agenzia di Viaggi. Tutti i diritti riservati.</p>
