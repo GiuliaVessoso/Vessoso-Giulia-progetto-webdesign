@@ -358,9 +358,10 @@
 " alt="Instagram Logo" class="social-logo">
             <p>@zephyr.agenziaviaggi</p>
         </div>
-        <!-- Numero di telefono -->
+      <!-- Numero di telefono con icona della cornetta -->
         <div class="phone-number">
-            <p>Telefono: +39 123 456 7890</p>
+            <img src="phone-icon.png" alt="Phone Icon" class="phone-logo">
+            <p>+39 123 456 7890</p>
         </div>
     </div>
 </section>
@@ -383,13 +384,21 @@
         height: auto;
         margin-right: 10px;
     }
+    .phone-number {
+        display: flex;
+        align-items: center;
+    }
+    .phone-logo {
+        width: 30px; /* Dimensione dell'icona della cornetta */
+        height: auto;
+        margin-right: 10px;
+    }
     .social-media p,
     .phone-number p {
         font-size: 18px;
         color: #333;
     }
 </style>
-
     
     <footer>
         <p>&copy; 2024 Agenzia di Viaggi. Tutti i diritti riservati.</p>
