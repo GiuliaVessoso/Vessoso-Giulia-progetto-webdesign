@@ -193,24 +193,89 @@
         <!-- Sezione Esperienze con immagini e recensioni -->
     </section>
     
-    <section id="come-funziona">
-        <h2>Come Funziona</h2>
-        <div class="content">
+   <section id="come-funziona" class="how-it-works">
+    <h2>Come Funziona</h2>
+    <div class="steps">
+        <div class="step">
+            <img src="step1.jpg" alt="Step 1">
             <div>
-                <img src="image4.jpg" alt="consigli-viaggio-Thailandia.jpg">
-                <p>Descrizione Immagine 4</p>
-            </div>
-            <div>
-                <img src="image5.jpg" alt="Immagine 5">
-                <p>Descrizione Immagine 5</p>
-            </div>
-            <div>
-                <img src="image6.jpg" alt="Immagine 6">
-                <p>Descrizione Immagine 6</p>
+                <span class="step-number">1</span>
+                <h3>Scegli la tua destinazione</h3>
+                <p>Seleziona la destinazione per il tuo prossimo viaggio tra le nostre mete disponibili.</p>
             </div>
         </div>
-        <!-- Sezione Come Funziona con immagini e descrizioni -->
-    </section>
+        <div class="step">
+            <img src="step2.jpg" alt="Step 2">
+            <div>
+                <span class="step-number">2</span>
+                <h3>Personalizza il tuo viaggio</h3>
+                <p>Personalizza la tua esperienza di viaggio scegliendo le opzioni che preferisci, come il tipo di alloggio e le attività.</p>
+            </div>
+        </div>
+        <div class="step">
+            <img src="step3.jpg" alt="Step 3">
+            <div>
+                <span class="step-number">3</span>
+                <h3>Prenota e conferma</h3>
+                <p>Effettua il pagamento e ricevi la conferma della tua prenotazione via email con tutti i dettagli del viaggio.</p>
+            </div>
+        </div>
+        <div class="step">
+            <img src="step4.jpg" alt="Step 4">
+            <div>
+                <span class="step-number">4</span>
+                <h3>Goditi il viaggio</h3>
+                <p>Prepara le valigie e goditi un'esperienza di viaggio indimenticabile, con tutte le informazioni necessarie fornite da noi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .how-it-works {
+        background-color: #fff;
+        padding: 50px 20px;
+        text-align: center;
+    }
+    .how-it-works h2 {
+        color: #ec1c89;
+        margin-bottom: 40px;
+    }
+    .steps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .step {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+        max-width: 800px;
+    }
+    .step img {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+    }
+    .step div {
+        max-width: 600px;
+        text-align: left;
+    }
+    .step-number {
+        font-size: 36px;
+        color: #ec1c89;
+        margin-right: 20px;
+    }
+    .step h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .step-description {
+        font-size: 18px;
+        color: #333;
+    }
+</style>
     
     <section id="contattaci">
         <h2>Contattaci</h2>
