@@ -193,11 +193,10 @@
         <!-- Sezione Esperienze con immagini e recensioni -->
     </section>
     
-   <section id="come-funziona" class="how-it-works">
+  <section id="come-funziona" class="how-it-works">
     <h2>Come Funziona</h2>
     <div class="steps">
         <div class="step">
-            <img src="step1.jpg" alt="Step 1">
             <div>
                 <span class="step-number">1</span>
                 <h3>Scegli la tua destinazione</h3>
@@ -205,7 +204,6 @@
             </div>
         </div>
         <div class="step">
-            <img src="step2.jpg" alt="Step 2">
             <div>
                 <span class="step-number">2</span>
                 <h3>Personalizza il tuo viaggio</h3>
@@ -213,7 +211,6 @@
             </div>
         </div>
         <div class="step">
-            <img src="step3.jpg" alt="Step 3">
             <div>
                 <span class="step-number">3</span>
                 <h3>Prenota e conferma</h3>
@@ -221,7 +218,6 @@
             </div>
         </div>
         <div class="step">
-            <img src="step4.jpg" alt="Step 4">
             <div>
                 <span class="step-number">4</span>
                 <h3>Goditi il viaggio</h3>
@@ -243,35 +239,26 @@
     }
     .steps {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
     .step {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: 30px;
-        max-width: 800px;
-    }
-    .step img {
-        width: 100px;
-        height: 100px;
-        margin-right: 20px;
-    }
-    .step div {
-        max-width: 600px;
-        text-align: left;
+        flex: 1;
+        min-width: 200px;
+        margin: 10px;
+        text-align: center;
     }
     .step-number {
         font-size: 36px;
         color: #ec1c89;
-        margin-right: 20px;
+        display: block;
+        margin-bottom: 10px;
     }
     .step h3 {
         font-size: 24px;
         margin-bottom: 10px;
     }
-    .step-description {
+    .step p {
         font-size: 18px;
         color: #333;
     }
