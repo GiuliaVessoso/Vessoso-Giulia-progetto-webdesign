@@ -264,12 +264,6 @@
     }
 </style>
     
-    <section id="contattaci">
-        <h2>Contattaci</h2>
-        <p>Contatta il nostro team per ulteriori informazioni.</p>
-        <!-- Sezione Contattaci con un breve testo -->
-    </section>
-    
    <section id="prenota-viaggio">
     <!-- Box di prenotazione per i viaggi a sorpresa -->
     <div class="booking-box">
@@ -351,6 +345,47 @@
     }
     .booking-box button:hover {
         background-color: #d81b74;
+    }
+</style>
+
+    <section id="contattaci">
+    <h2>Contattaci</h2>
+    <p>Contatta il nostro team per ulteriori informazioni.</p>
+    <!-- Logo Instagram e contatto -->
+    <div class="contact-info">
+        <div class="social-media">
+            <img src="instagram-logo.png" alt="Instagram Logo" class="social-logo">
+            <p>@zephyr.agenziaviaggi</p>
+        </div>
+        <!-- Numero di telefono -->
+        <div class="phone-number">
+            <p>Telefono: +39 123 456 7890</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .social-media {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .social-logo {
+        width: 30px; /* Dimensione del logo */
+        height: auto;
+        margin-right: 10px;
+    }
+    .social-media p,
+    .phone-number p {
+        font-size: 18px;
+        color: #333;
     }
 </style>
 
