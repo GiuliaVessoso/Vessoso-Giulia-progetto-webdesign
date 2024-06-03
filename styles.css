@@ -1,1 +1,142 @@
-
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        /* Stile generale del corpo della pagina, con font, margini, padding e colore di sfondo */
+        
+        header {
+            background-color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        /* Stile dell'intestazione della pagina, con sfondo bianco, testo centrato e padding */
+        
+        .logo img {
+            width: 80px;
+            height: auto;
+        }
+        /* Dimensione dell'immagine del logo nell'intestazione */
+        
+        nav {
+            background-color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        /* Stile del menu di navigazione, con sfondo bianco, testo centrato e padding */
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        /* Rimuove i puntatori della lista, il padding e i margini di default del menu di navigazione */
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        /* Visualizza gli elementi della lista di navigazione in linea orizzontale e aggiunge margine tra di essi */
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #ec1c89;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+        /* Stile dei link nel menu di navigazione: nessuna decorazione, colore, dimensione del testo e transizione per il cambio colore */
+        
+        nav ul li a:hover {
+            color: #333;
+        }
+        /* Cambia il colore del link al passaggio del mouse */
+        
+        .cart-icon {
+            margin-left: 20px;
+            font-size: 24px;
+            color: #ec1c89;
+        }
+        /* Stile dell'icona del carrello: margine, dimensione del font e colore */
+        
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        /* Stile delle sezioni della pagina: padding e testo centrato */
+        
+        h2 {
+            color: #ec1c89;
+        }
+        /* Colore dei titoli h2 */
+        
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        /* Stile del contenitore del contenuto: display flessibile, distribuzione degli elementi e wrapping */
+        
+        .content div {
+            width: 30%;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        /* Stile dei div all'interno del contenitore del contenuto: larghezza, margine e testo centrato */
+        
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Dimensione delle immagini nel contenuto: larghezza massima e altezza proporzionale */
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        /* Stile del footer: colore di sfondo, colore del testo, padding e testo centrato */
+        
+        /* Stili responsivi */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+            /* Stile per schermi con larghezza massima di 768px: gli elementi del menu diventano verticali e con margine inferiore */
+            
+            nav ul li a {
+                font-size: 20px;
+            }
+            /* Riduce la dimensione del testo nei link del menu */
+            
+            .cart-icon {
+                display: block;
+                margin: 10px auto;
+            }
+            /* L'icona del carrello diventa un elemento di blocco centrato con margine superiore e inferiore */
+            
+            .content div {
+                width: 45%;
+            }
+            /* Aumenta la larghezza dei div del contenuto al 45% del contenitore */
+        }
+        
+        @media (max-width: 480px) {
+            .content div {
+                width: 100%;
+            }
+            /* Per schermi con larghezza massima di 480px: i div del contenuto occupano il 100% del contenitore */
+            
+            nav ul li a {
+                font-size: 18px;
+            }
+            /* Riduce ulteriormente la dimensione del testo nei link del menu */
+            
+            section {
+                padding: 30px 0;
+            }
+            /* Riduce il padding delle sezioni */
+        }
