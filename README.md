@@ -19,13 +19,11 @@ L'obiettivo è quello di creare un sito web html responsive che comprendesse i p
 * Descrizione dei pacchetti viaggi
 * Sezione form per le prenotazioni
 * Gallery
-* Footer con contatti, orari, copyright e profili social
+* Footer con copyright 
 * recensioni dei clienti
-* Cookies
+
 
 # PER RIUSCIRE A REALIZZARLO HO UTILIZZATO:
-* Bootstrap 4.5.2
-* Font-awesome
 * Codepen.io
 * Chat Gpt
 
