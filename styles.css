@@ -231,3 +231,79 @@ body {
         margin-bottom: 10px;
     }
   
+/* Contenitore delle informazioni di contatto */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Social media (Instagram) */
+.social-media, .phone-number {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Logo Instagram e icona della cornetta */
+.social-logo, .phone-logo {
+    width: 30px; /* Dimensione dell'icona */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Stile del testo per nome utente Instagram e numero di telefono */
+.social-media p, .phone-number p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Contenitore dello slider */
+.slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Contenitore delle slide */
+.slider {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease;
+}
+
+/* Singola slide */
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Immagine all'interno della slide */
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Frecce di navigazione */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
