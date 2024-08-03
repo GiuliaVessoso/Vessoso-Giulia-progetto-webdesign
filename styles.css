@@ -230,4 +230,32 @@ body {
         align-items: center;
         margin-bottom: 10px;
     }
+/* Contenitore delle informazioni di contatto */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Social media (Instagram) */
+.social-media, .phone-number {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Logo Instagram e icona della cornetta */
+.social-logo, .phone-logo {
+    width: 30px; /* Dimensione dell'icona */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Stile del testo per nome utente Instagram e numero di telefono */
+.social-media p, .phone-number p {
+    font-size: 18px;
+    color: #333;
+}
   
