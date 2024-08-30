@@ -294,9 +294,12 @@ body {
 }
 
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
+   .toggle_btn{
+		display: block;
+	}
+	.dropdown{
+		display: block;
+	}
 
     .nav-links {
         display: none; /* Nasconde il menu principale */
