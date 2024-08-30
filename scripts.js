@@ -23,36 +23,23 @@ dropdownLinks.forEach(link => {
         updateToggleIcon(false);
     });
 });
-// Quando la pagina è caricata, esegui il seguente codice
-document.addEventListener("DOMContentLoaded", function() {
-    const backToTopBtn = document.getElementById("backToTopBtn");
+/ Quando la pagina è caricata, esegui il seguente codice
+        document.addEventListener("DOMContentLoaded", function() {
+            const backToTopBtn = document.getElementById("backToTopBtn");
 
-    // Mostra il bottone quando si scrolla oltre 20px
-    window.onscroll = function() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            backToTopBtn.style.display = "block"; // Mostra il bottone
-        } else {
-            backToTopBtn.style.display = "none"; // Nasconde il bottone
-        }
-    };
-// Quando la pagina è caricata, esegui il seguente codice
-document.addEventListener("DOMContentLoaded", function() {
-    const backToTopBtn = document.getElementById("backToTopBtn");
+            // Mostra il bottone quando si scrolla oltre 20px
+            window.onscroll = function() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    backToTopBtn.style.display = "block"; // Mostra il bottone
+                } else {
+                    backToTopBtn.style.display = "none"; // Nasconde il bottone
+                }
+            };
 
-    // Mostra il bottone quando si scrolla oltre 20px
-    window.onscroll = function() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            backToTopBtn.style.display = "block"; // Mostra il bottone
-        } else {
-            backToTopBtn.style.display = "none"; // Nasconde il bottone
-        }
-    };
-
-    // Quando il bottone viene cliccato, ritorna all'inizio della pagina
-    backToTopBtn.addEventListener("click", function() {
-        window.scrollTo({top: 0, behavior: 'smooth'}); // Scrolla fino in cima in modo fluido
-    });
-});
-
+            // Quando il bottone viene cliccato, ritorna all'inizio della pagina
+            backToTopBtn.addEventListener("click", function() {
+                window.scrollTo({top: 0, behavior: 'smooth'}); // Scrolla fino in cima in modo fluido
+            });
+        });
   
 
