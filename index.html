@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <!--Importazione icone-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
@@ -12,15 +16,19 @@
         <div class="logo">
             <img src="logo.png" alt="Logo">
         </div>
-        <!-- Menu a tendina per dispositivi mobili -->
+        <div class="toggle_btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+			
+        <!-- Menu a tendina per dispositivi mobili
         <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </div>
+        </div> -->
     </header>
     
-    <nav>
+    <nav> <!-- menu base -->
         <ul class="nav-links">
             <li><a href="#esperienze">Esperienze</a></li>
             <li><a href="#come-funziona">Come Funziona</a></li>
@@ -32,6 +40,19 @@
             <i class="fas fa-shopping-cart cart-icon"></i>
         </div>
     </nav>
+
+      <div class="dropdown"> <!-- menu piccolo -->
+        <ul class="nav-links">
+            <li><a href="#esperienze">Esperienze</a></li>
+            <li><a href="#come-funziona">Come Funziona</a></li>
+            <li><a href="#contattaci">Contattaci</a></li>
+            <li><a href="#prenota-viaggio">Prenota un Viaggio</a></li>
+        </ul>
+        <!-- Icona del carrello -->
+        <div class="cart-icon-container">
+            <i class="fas fa-shopping-cart cart-icon"></i>
+        </div>
+    </div>
     
     <section id="esperienze">
         <h2>Esperienze</h2>
