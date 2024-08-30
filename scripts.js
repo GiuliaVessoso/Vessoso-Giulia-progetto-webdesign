@@ -36,23 +36,6 @@ dropdownLinks.forEach(link => {
                 }
             };
 
-           // Inizializzazione di Swiper
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        autoplay: {
-            delay: 2000, // Cambia slide ogni 2 secondi
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        loop: true,
-        // Disabilita i controlli di navigazione
-        navigation: {
-            nextEl: null,
-            prevEl: null,
-        },
-    });
+          
   
 
