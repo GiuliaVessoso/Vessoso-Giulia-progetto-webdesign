@@ -295,6 +295,7 @@ nav ul li a:hover {
     cursor: pointer; /* Cambia il cursore quando si passa sopra al bottone */
     padding: 10px; /* Aggiunge un po' di spazio attorno alla freccia */
     font-size: 24px; /* Dimensione della freccia */
+    height: 1500px;
     display: none; /* Nasconde il bottone inizialmente */
 }
 
