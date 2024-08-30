@@ -172,6 +172,9 @@ nav ul li a:hover {
             padding: 20px 0;
             text-align: center;
         }
+footer a {
+	color: #ec1c89;
+}
         /* Stile del footer: colore di sfondo, colore del testo, padding e testo centrato */
         
 
