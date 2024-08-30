@@ -248,7 +248,7 @@ nav ul li a:hover {
         transform: translateY(0); /* Posizione originale */
     }
     40% {
-        transform: translateY(-25px); /* Solleva l'icona */
+        transform: translateY(-20px); /* Solleva l'icona */
     }
     60% {
         transform: translateY(-15px); /* Parziale ritorno alla posizione originale */
