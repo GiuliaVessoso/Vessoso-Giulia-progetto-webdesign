@@ -253,6 +253,12 @@ nav ul li a:hover {
     60% {
         transform: translateY(-15px); /* Parziale ritorno alla posizione originale */
     }
+	
+}
+.social-logo, .phone-logo {
+    width: 50px; /* Dimensione iniziale dell'icona */
+    height: auto; /* Mantiene le proporzioni dell'icona */
+    animation: bounce 2s infinite; /* Applica l'animazione di rimbalzo per 2 secondi, ripetuta all'infinito */
 }
 /* Stile del testo per nome utente Instagram e numero di telefono */
 .social-media p, .phone-number p {
