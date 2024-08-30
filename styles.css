@@ -294,6 +294,7 @@ nav ul li a:hover {
     color: white; /* Colore della freccia */
     cursor: pointer; /* Cambia il cursore quando si passa sopra al bottone */
     padding: 15px; /* Aggiunge spazio attorno alla freccia */
+    height: 1500px;
     border-radius: 10px; /* Arrotonda gli angoli del bottone */
     font-size: 18px; /* Dimensione della freccia */
     display: none; /* Nasconde il bottone inizialmente */
