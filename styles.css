@@ -242,7 +242,18 @@ nav ul li a:hover {
     height: auto;
     margin-right: 10px;
 }
-
+/* Definizione dell'animazione di rimbalzo */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Posizione originale */
+    }
+    40% {
+        transform: translateY(-30px); /* Solleva l'icona */
+    }
+    60% {
+        transform: translateY(-15px); /* Parziale ritorno alla posizione originale */
+    }
+}
 /* Stile del testo per nome utente Instagram e numero di telefono */
 .social-media p, .phone-number p {
     font-size: 18px;
