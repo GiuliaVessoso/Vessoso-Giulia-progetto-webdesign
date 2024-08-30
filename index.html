@@ -163,10 +163,65 @@
         </div>
     </section>
 	
-<!-- Bottone "Torna all'inizio" -->
-<button id="backToTopBtn" title="Torna all'inizio">
-    &#8679;
-</button>
+  <title>Bottone Torna all'inizio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Stile base per il bottone "Torna all'inizio" */
+        #backToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #555;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 18px;
+            display: none;
+        }
+
+        /* Effetto al passaggio del mouse sul bottone */
+        #backToTopBtn:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenuto della pagina -->
+    <div style="height: 1500px; padding: 20px;">
+        Scorri verso il basso per vedere il bottone "Torna all'inizio".
+    </div>
+
+    <!-- Bottone "Torna all'inizio" -->
+    <button id="backToTopBtn" title="Torna all'inizio">
+        &#8679;
+    </button>
+
+    <script>
+        // Quando la pagina è caricata, esegui il seguente codice
+        document.addEventListener("DOMContentLoaded", function() {
+            const backToTopBtn = document.getElementById("backToTopBtn");
+
+            // Mostra il bottone quando si scrolla oltre 20px
+            window.onscroll = function() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    backToTopBtn.style.display = "block"; // Mostra il bottone
+                } else {
+                    backToTopBtn.style.display = "none"; // Nasconde il bottone
+                }
+            };
+
+            // Quando il bottone viene cliccato, ritorna all'inizio della pagina
+            backToTopBtn.addEventListener("click", function() {
+                window.scrollTo({top: 0, behavior: 'smooth'}); // Scrolla fino in cima in modo fluido
+            });
+        });
+    </script>
+
 
 <!-- Inizio del footer -->
 <footer>
