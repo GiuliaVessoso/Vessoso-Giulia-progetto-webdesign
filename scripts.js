@@ -36,10 +36,6 @@ dropdownLinks.forEach(link => {
                 }
             };
 
-            // Quando il bottone viene cliccato, ritorna all'inizio della pagina
-            backToTopBtn.addEventListener("click", function() {
-                window.scrollTo({top: 0, behavior: 'smooth'}); // Scrolla fino in cima in modo fluido
-            });
-        });
+          
   
 
