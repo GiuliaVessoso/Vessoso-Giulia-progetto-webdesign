@@ -189,23 +189,25 @@
         </div>
     </section>
 	
-<!-- Inclusione della libreria Swiper.js -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      loop: true,
-    });
-  });
-</script>
+<!-- Inclusione di Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                loop: true,
+                autoplay: {
+                    delay: 3000, // Durata di 3 secondi per ogni slide
+                    disableOnInteraction: false, // Permette di continuare a scorrere anche dopo l'interazione dell'utente
+                },
+            });
+        });
+    </script>
 
 
 <!-- Inizio del footer -->
