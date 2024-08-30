@@ -282,6 +282,27 @@ nav ul li a:hover {
     font-size: 24px;
     color: #ec1c89;
 }
+/* Stile base per il bottone "Torna all'inizio" */
+#backToTopBtn {
+    position: fixed; /* Posiziona il bottone in un punto fisso rispetto alla finestra */
+    bottom: 20px; /* Distanza dal fondo dello schermo */
+    right: 20px; /* Distanza dal lato destro dello schermo */
+    z-index: 99; /* Assicura che il bottone sia sempre visibile sopra altri elementi */
+    border: none; /* Rimuove il bordo predefinito */
+    outline: none; /* Rimuove il contorno predefinito */
+    background-color: #555; /* Colore di sfondo del bottone */
+    color: white; /* Colore della freccia */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra al bottone */
+    padding: 15px; /* Aggiunge spazio attorno alla freccia */
+    border-radius: 10px; /* Arrotonda gli angoli del bottone */
+    font-size: 18px; /* Dimensione della freccia */
+    display: none; /* Nasconde il bottone inizialmente */
+}
+
+/* Effetto al passaggio del mouse sul bottone */
+#backToTopBtn:hover {
+    background-color: #333; /* Scambia il colore di sfondo quando il bottone è in hover */
+}
 
 /*RESPONSIVE*/
 @media (max-width: 768px) {
