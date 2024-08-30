@@ -35,6 +35,27 @@ dropdownLinks.forEach(link => {
                     backToTopBtn.style.display = "none"; // Nasconde il bottone
                 }
             };
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Mostra il popup quando la pagina è completamente caricata
+        var popup = document.getElementById('discount-popup');
+        var closeButton = document.querySelector('.close-btn');
+        
+        popup.style.display = 'flex'; // Mostra il popup
+        
+        // Chiudi il popup quando si clicca sul pulsante di chiusura
+        closeButton.addEventListener('click', function() {
+            popup.style.display = 'none';
+        });
+        
+        // Chiudi il popup quando si clicca fuori dal contenuto del popup
+        window.addEventListener('click', function(event) {
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
+    });
+</script>
 
           
   
