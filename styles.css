@@ -87,7 +87,34 @@ nav ul li a:hover {
             color: #ec1c89;
         }
         /* Stile dell'icona del carrello: margine, dimensione del font e colore */
+/* Stili per lo slider */
+.slider-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 600px; /* Limita la larghezza per schermi piccoli */
+}
 
+/* Stili per lo slider */
+.swiper-container {
+    width: 100%; /* Cambia a 100% per schermi piccoli */
+    max-width: 600px; /* Limita la larghezza per schermi piccoli */
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+/* Adatta le immagini al contenitore */
+.swiper-slide img {
+    width: 100%;
+    height: auto; /* Mantiene il rapporto d'aspetto */
+    object-fit: cover;
+}
+
+/* Stili per la paginazione */
+.swiper-pagination-bullet {
+    background: #8b008b;
+}
 /*CORPO*/
         section {
             padding: 50px 0;
