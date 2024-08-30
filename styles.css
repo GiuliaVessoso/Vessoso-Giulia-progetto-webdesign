@@ -293,9 +293,8 @@ nav ul li a:hover {
     background-color: transparent; /* Rende lo sfondo trasparente */
     color: #FF00FF; /* Colore fucsia per la freccia */
     cursor: pointer; /* Cambia il cursore quando si passa sopra al bottone */
-    padding: 10px; /* Aggiunge un po' di spazio attorno alla freccia */
-    font-size: 24px; /* Dimensione della freccia */
-    height: 1500px;
+    padding: 15px; /* Aggiunge un po' di spazio attorno alla freccia */
+    font-size: 40px; /* Dimensione della freccia */
     display: none; /* Nasconde il bottone inizialmente */
 }
 
@@ -303,6 +302,7 @@ nav ul li a:hover {
 #backToTopBtn:hover {
     color: #FF69B4; /* Cambia il colore della freccia a un fucsia più chiaro quando è in hover */
 }
+
 
 
 /*RESPONSIVE*/
