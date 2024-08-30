@@ -242,40 +242,71 @@ footer a {
         /* Stile del footer: colore di sfondo, colore del testo, padding e testo centrato */
         
 
- .how-it-works {
-        background-color: #fff;
-        padding: 50px 20px;
-        text-align: center;
-    }
-    .how-it-works h2 {
-        color: #ec1c89;
-        margin-bottom: 40px;
-    }
+ /* Stili di base per la sezione Come Funziona */
+.how-it-works {
+    padding: 20px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+}
+
+.step {
+    display: flex;
+    align-items: center; /* Allinea verticalmente al centro */
+    margin-bottom: 20px; /* Spazio tra i passi */
+}
+
+.step-number {
+    font-size: 24px; /* Dimensione del numero */
+    font-weight: bold;
+    background-color: #ec1c89; /* Colore di sfondo del numero */
+    color: #fff; /* Colore del testo del numero */
+    border-radius: 50%; /* Forma circolare */
+    width: 40px; /* Larghezza del cerchio */
+    height: 40px; /* Altezza del cerchio */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px; /* Spazio tra il numero e la spiegazione */
+}
+
+.step h3 {
+    font-size: 20px;
+    color: #333; /* Colore del titolo */
+    margin: 0;
+}
+
+.step p {
+    font-size: 16px;
+    color: #666; /* Colore del testo */
+    margin: 5px 0 0; /* Margine per il testo */
+}
+
+/* Stili per la visualizzazione su dispositivi mobili */
+@media (max-width: 768px) {
     .steps {
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
+
     .step {
-        flex: 1;
-        min-width: 200px;
-        margin: 10px;
-        text-align: center;
+        flex-direction: row; /* Disposizione in fila per la visualizzazione mobile */
+        align-items: flex-start; /* Allinea gli elementi all'inizio del contenitore */
     }
+
     .step-number {
-        font-size: 36px;
-        color: #ec1c89;
-        display: block;
-        margin-bottom: 10px;
+        margin-right: 10px; /* Spazio tra il numero e la spiegazione */
+        margin-bottom: 0; /* Rimuove il margine inferiore */
+        margin-top: 0; /* Rimuove il margine superiore */
     }
-    .step h3 {
-        font-size: 24px;
-        margin-bottom: 10px;
+
+    .step h3, .step p {
+        text-align: left; /* Allinea il testo a sinistra */
     }
-    .step p {
-        font-size: 18px;
-        color: #333;
-    }
+}
+
  .booking-box {
         background-color: #fff;
         padding: 40px;
