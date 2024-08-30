@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Responsive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Stile di base per l'header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f8f8;
+        }
+
+        .nav-desktop {
+            display: block;
+        }
+
+        .toggle_btn {
+            display: none;
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            display: none;
+            flex-direction: column;
+            background-color: #fff;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .dropdown-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .dropdown-menu ul li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .dropdown-menu ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Stile per dispositivi mobili */
+        @media (max-width: 768px) {
+            .nav-desktop {
+                display: none;
+            }
+
+            .toggle_btn {
+                display: block;
+            }
+
+            .dropdown-menu {
+                display: none;
+            }
+
+            .dropdown-menu.active {
+                display: flex;
+            }
+
+            .toggle_btn.active i {
+                content: "\f00d"; /* Codice per l'icona "x" di FontAwesome */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <nav class="nav-desktop">
+        <ul class="nav-links">
+            <li><a href="#esperienze">Esperienze</a></li>
+            <li><a href="#come-funziona">Come Funziona</a></li>
+            <li><a href="#prenota-viaggio">Prenota un Viaggio</a></li>
+            <li><a href="#contattaci">Contattaci</a></li>
+            <li><i class="fas fa-shopping-cart cart-icon"></i></li>
+        </ul>
+    </nav>
+
+    <div class="dropdown-menu">
+        <ul class="nav-links">
+            <li><a href="#esperienze">Esperienze</a></li>
+            <li><a href="#come-funziona">Come Funziona</a></li>
+            <li><a href="#prenota-viaggio">Prenota un Viaggio</a></li>
+            <li><a href="#contattaci">Contattaci</a></li>
+        </ul>
+        <div class="cart-icon-container">
+            <i class="fas fa-shopping-cart cart-icon"></i>
+        </div>
+    </div>
+</header>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const toggleBtn = document.querySelector(".toggle_btn");
+        const dropdownMenu = document.querySelector(".dropdown-menu");
+        const icon = toggleBtn.querySelector("i");
+
+        toggleBtn.addEventListener("click", function() {
+            dropdownMenu.classList.toggle("active");
+            if (dropdownMenu.classList.contains("active")) {
+                icon.classList.replace("fa-bars", "fa-times");
+            } else {
+                icon.classList.replace("fa-times", "fa-bars");
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
