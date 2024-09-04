@@ -13,44 +13,23 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
-        </div>
-        <div class="toggle_btn">
-		<i class="fa-solid fa-bars"></i>
-	</div>
-		
-        <!-- Menu a tendina per dispositivi mobili
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div> -->
-
-    <nav> <!-- menu base -->
-        <ul class="nav-links">
-            <li><a href="#esperienze">Esperienze</a></li>
-            <li><a href="#come-funziona">Come Funziona</a></li>
-            <li><a href="#prenota-viaggio">Prenota un Viaggio</a></li>
-		<li><a href="#contattaci">Contattaci</a></li>
-		<li> <i class="fas fa-shopping-cart cart-icon"></i></li>
-        </ul>
-    </nav>
-
-      <div class="dropdown"> <!-- menu piccolo -->
-        <ul class="nav-links">
-            <li><a href="#esperienze">Esperienze</a></li>
-            <li><a href="#come-funziona">Come Funziona</a></li>
-            <li><a href="#contattaci">Contattaci</a></li>
-            <li><a href="#prenota-viaggio">Prenota un Viaggio</a></li>
-        </ul>
-        <!-- Icona del carrello -->
-        <div class="cart-icon-container">
-            <i class="fas fa-shopping-cart cart-icon"></i>
-        </div>
-    </div>
-</header>
+   <header>
+		<!--MENU-->
+		<nav class="navbar">
+			<div class="logo"><img src="logo.png" alt="Logo"></div>
+			<ul class="nav-links">
+				<li><a href="#esperienze">Esperienze</a></li>
+				<li><a href="#come-funziona">Come Funziona</a></li>
+				<li><a href="#prenota-viaggio">Prenota un Viaggio</a></li>
+				<li><a href="#contattaci">Contattaci</a></li>
+			</ul>
+			<div class="menu-icon" onclick="toggleMenu()">
+				&#9776;
+			</div>
+		</nav>
+	</header>
+	
+	<div class="contenuto">
 <!-- Contenitore per lo slider -->
 <section id="slider-section" class="slider-section">
     <div class="swiper-container">
@@ -187,6 +166,7 @@
    
         </div>
     </section>
+	</div>
 	
 <!-- Inclusione di Swiper.js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
