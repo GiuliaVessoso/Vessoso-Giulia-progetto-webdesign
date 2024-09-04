@@ -1,154 +1,145 @@
-/* Stile generale del corpo della pagina */
 body {
-    font-family: Arial, sans-serif; /* Font principale */
-    margin: 0; /* Rimuove i margini di default */
-    padding: 0; /* Rimuove il padding di default */
-    background-color: #f8f8f8; /* Colore di sfondo */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
 }
 
-/* Header e Navbar */
-header {
-    text-align: center; /* Allinea il testo al centro */
-    background-color: white; /* Colore di sfondo bianco */
-    padding: 10px 0; /* Padding superiore e inferiore */
-    position: fixed; /* Fissa l'header in alto */
-    width: 100%; /* Larghezza completa */
-    top: 0; /* Posiziona l'header in cima */
-    left: 0; /* Allinea a sinistra */
-    z-index: 999; /* Z-index per sovrapposizione */
-}
+/*ZONA MENU*/
 
+/* Stile generale del corpo della pagina, con font, margini, padding e colore di sfondo */
+header{
+	text-align: center;
+	background-color: white;
+        padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999
+}
 .navbar {
-    display: flex; /* Usa il layout flex */
-    flex-direction: column; /* Dispone gli elementi in colonna */
-    justify-content: space-between; /* Spazio tra gli elementi */
-    align-items: center; /* Allinea gli elementi al centro */
-    background-color: #fff; /* Colore di sfondo bianco */
-    padding: 15px; /* Padding interno */
+    display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
 }
 
-.navbar .logo img {
-    width: 80px; /* Larghezza dell'immagine */
-    height: auto; /* Mantiene le proporzioni */
+/* Dimensione dell'immagine del logo nell'intestazione */
+.navbar .logo img{
+    width: 80px;
+    height: auto;
 }
-
+/* Stile del menu di navigazione, con sfondo bianco, testo centrato e padding */    
 .navbar .nav-links {
-    list-style: none; /* Rimuove i puntatori della lista */
-    display: flex; /* Usa il layout flex */
-    justify-content: center; /* Allinea gli elementi al centro */
-    align-items: center; /* Centra verticalmente gli elementi */
-    padding: 0; /* Rimuove il padding */
-    padding-top: 10px; /* Aggiunge padding in cima */
-    margin: 0; /* Rimuove i margini */
-    transition: all 0.3s ease; /* Aggiunge una transizione */
+    list-style: none;
+    display: flex;
+	padding: 0;
+	padding-top: 10px;
+    margin: 0;
+    transition: all 0.3s ease;  /* Aggiunta una transizione per vedere il cambio */
+}
+.navbar .nav-links li {
+    margin: 0 10px;
+	display: inline;
 }
 
-.navbar .nav-links li {
-    margin: 0 10px; /* Margine laterale per ogni link */
-    display: inline; /* Dispone gli elementi in linea */
-}
+/* Rimuove i puntatori della lista, il padding e i margini di default del menu di navigazione */
 
 .navbar .nav-links a {
-    color: #ec1c89; /* Colore del testo */
-    text-decoration: none; /* Rimuove la sottolineatura */
-    font-size: 24px; /* Dimensione del testo */
+    color: #ec1c89;
+    text-decoration: none;
+    font-size: 24px;
 }
-
 .navbar .nav-links a:hover {
-    color: black; /* Colore al passaggio del mouse */
+    color: black;
 }
 
 .navbar .menu-icon {
-    display: none; /* Nasconde l'icona del menu di default */
-    font-size: 28px; /* Dimensione dell'icona */
-    color: #ec1c89; /* Colore dell'icona */
-    cursor: pointer; /* Cambia il cursore al passaggio */
+    display: none;
+    font-size: 28px;
+    color: #ec1c89;
+    cursor: pointer;
 }
 
-.cart-icon-container {
-    display: flex; /* Usa il layout flex */
-    align-items: center; /* Allinea al centro verticalmente */
-    margin-left: auto; /* Spinge a destra l'icona del carrello */
-}
 
-.cart-icon {
-    font-size: 24px; /* Dimensione dell'icona del carrello */
-    color: #ec1c89; /* Colore dell'icona */
-}
-
-/* Sezione Esperienze */
+/* Nascondi la sezione recensioni per dispositivi mobili */
 #esperienze {
     display: block; /* Mostra la sezione recensioni per default */
 }
 
-/* Slider */
+
+
+/* Stili per lo slider */
 .swiper-container {
-    width: 100%; /* Larghezza completa */
-    height: 100%; /* Altezza completa */
+    width: 100%;
+    height: 100%;
 }
 
 .swiper-slide {
-    display: flex; /* Usa il layout flex */
-    flex-direction: column; /* Dispone gli elementi in colonna */
-    align-items: center; /* Allinea gli elementi al centro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .swiper-slide img {
-    width: 100%; /* Larghezza completa */
-    height: auto; /* Mantiene le proporzioni */
-    object-fit: cover; /* Adatta l'immagine al contenitore */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
+/* Stili per la paginazione */
 .swiper-pagination {
-    bottom: 10px; /* Posizione della paginazione */
+    bottom: 10px;
 }
-
-/* Popup */
+/* Stili per il popup */
 .popup {
-    display: none; /* Nasconde il popup per default */
-    position: fixed; /* Fissa il popup in posizione */
-    top: 0; /* Posiziona in alto */
-    left: 0; /* Allinea a sinistra */
-    width: 100%; /* Larghezza completa */
-    height: 100%; /* Altezza completa */
+    display: none; /* Nascondi il popup per default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Sfondo scuro trasparente */
     z-index: 1000; /* Sovrappone al resto del contenuto */
-    align-items: center; /* Centra verticalmente il popup */
-    justify-content: center; /* Centra orizzontalmente il popup */
+    align-items: center; /* Centra il contenuto verticalmente */
+    justify-content: center; /* Centra il contenuto orizzontalmente */
 }
 
 .popup-content {
-    background: #fff; /* Sfondo bianco */
-    padding: 20px; /* Padding interno */
-    border-radius: 10px; /* Angoli arrotondati */
-    width: 80%; /* Larghezza relativa */
-    max-width: 500px; /* Larghezza massima */
-    text-align: center; /* Testo centrato */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
 }
 
 .popup-content h1 {
-    color: #ec1c89; /* Colore del titolo */
-    font-size: 24px; /* Dimensione del titolo */
-    margin-bottom: 10px; /* Margine inferiore */
+    color: #ec1c89;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .popup-content p {
-    color: #ec1c89; /* Colore del testo */
-    font-size: 16px; /* Dimensione del testo */
-    margin-bottom: 10px; /* Margine inferiore */
+    color: #ec1c89;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .popup-content p strong {
-    color: #ec1c89; /* Colore del testo in grassetto */
+    color: #ec1c89;
 }
 
 .popup-content .btn {
-    display: inline-block; /* Visualizzazione inline block */
-    padding: 10px 20px; /* Padding interno */
-    background: #ec1c89; /* Colore di sfondo del bottone */
-    color: #fff; /* Colore del testo */
-    text-decoration: none; /* Rimuove la sottolineatura */
-    border-radius: 5px; /* Angoli arrotondati */
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ec1c89;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .popup-content .btn:hover {
@@ -156,280 +147,399 @@ header {
 }
 
 .close-btn {
-    position: absolute; /* Posizione assoluta */
-    top: 10px; /* Posiziona in alto */
-    right: 10px; /* Allinea a destra */
-    font-size: 24px; /* Dimensione del testo */
-    cursor: pointer; /* Cambia il cursore al passaggio */
-    color: #ec1c89; /* Colore del bottone */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ec1c89;
 }
 
 .close-btn:hover {
-    color: #d01a7e; /* Colore dell'hover */
+    color: #d01a7e;
 }
 
-/* Corpo della pagina */
-section {
-    padding: 50px 0; /* Padding superiore e inferiore */
-    text-align: center; /* Testo centrato */
-}
-
-h2 {
-    color: #ec1c89; /* Colore dei titoli h2 */
-}
-
-.content {
-    display: flex; /* Usa il layout flex */
-    justify-content: space-around; /* Distribuisce gli elementi */
-    flex-wrap: wrap; /* Permette il wrapping degli elementi */
-    margin-top: 20px; /* Margine superiore */
-}
-
-.content div {
-    width: 30%; /* Larghezza relativa dei contenitori */
-    margin-bottom: 30px; /* Margine inferiore */
-    text-align: center; /* Testo centrato */
-}
-
-.content img {
-    max-width: 100%; /* Larghezza massima delle immagini */
-    height: auto; /* Mantiene le proporzioni */
-}
-
-/* Footer */
-footer {
-    background-color: #333; /* Colore di sfondo scuro */
-    color: #fff; /* Colore del testo bianco */
-    padding: 20px 0; /* Padding superiore e inferiore */
-    text-align: center; /* Testo centrato */
-}
-
+/*CORPO*/
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        /* Stile delle sezioni della pagina: padding e testo centrato */
+        
+        h2 {
+            color: #ec1c89;
+        }
+        /* Colore dei titoli h2 */
+        
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        /* Stile del contenitore del contenuto: display flessibile, distribuzione degli elementi e wrapping */
+        
+        .content div {
+            width: 30%;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        /* Stile dei div all'interno del contenitore del contenuto: larghezza, margine e testo centrato */
+        
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Dimensione delle immagini nel contenuto: larghezza massima e altezza proporzionale */
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
 footer a {
-    color: #ec1c89; /* Colore dei link nel footer */
+	color: #ec1c89;
 }
+        /* Stile del footer: colore di sfondo, colore del testo, padding e testo centrato */
+        
 
-/* Sezione "How it works" */
+/* Stili per la versione desktop */
 .how-it-works {
-    background-color: #fff; /* Sfondo bianco */
-    padding: 50px 20px; /* Padding interno */
-    text-align: center; /* Testo centrato */
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 .how-it-works h2 {
-    color: #ec1c89; /* Colore del titolo */
-    margin-bottom: 40px; /* Margine inferiore */
+    color: #ec1c89;
+    margin-bottom: 40px;
 }
 
 .steps {
-    display: flex; /* Usa il layout flex */
-    justify-content: space-around; /* Distribuisce gli elementi */
-    flex-wrap: wrap; /* Permette il wrapping degli elementi */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .step {
-    flex: 1; /* Flessibilità degli elementi */
-    min-width: 200px; /* Larghezza minima */
-    margin: 10px; /* Margine intorno agli elementi */
-    text-align: center; /* Testo centrato */
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    text-align: center;
 }
 
 .step-number {
-    font-size: 36px; /* Dimensione del numero */
-    color: #ec1c89; /* Colore del numero */
-    display: block; /* Visualizzazione come blocco */
-    margin-bottom: 10px; /* Margine inferiore */
+    font-size: 36px;
+    color: #ec1c89;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .step h3 {
-    font-size: 24px; /* Dimensione del titolo */
-    margin-bottom: 10px; /* Margine inferiore */
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .step p {
-    font-size: 18px; /* Dimensione del testo */
-    color: #333; /* Colore del testo */
+    font-size: 18px;
+    color: #333;
 }
 
-/* Box di prenotazione */
-.booking-box {
-    background-color: #fff; /* Sfondo bianco */
-    padding: 40px; /* Padding interno */
-    max-width: 600px; /* Larghezza massima */
-    margin: 0 auto; /* Centra l'elemento */
-    border-radius: 8px; /* Angoli arrotondati */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombreggiatura */
-    text-align: left; /* Testo allineato a sinistra */
-}
 
-.booking-box h2 {
-    color: #ec1c89; /* Colore del titolo */
-    margin-bottom: 20px; /* Margine inferiore */
-    text-align: center; /* Testo centrato */
-}
 
-.booking-box label {
-    font-size: 18px; /* Dimensione del testo */
-    color: #333; /* Colore del testo */
-    display: block; /* Visualizzazione come blocco */
-    margin-bottom: 5px; /* Margine inferiore */
-}
-
-.booking-box select,
-.booking-box input[type="date"],
-.booking-box textarea {
-    width: 100%; /* Larghezza completa */
-    padding: 10px; /* Padding interno */
-    margin-bottom: 20px; /* Margine inferiore */
-    border: 1px solid #ccc; /* Bordo */
-    border-radius: 4px; /* Angoli arrotondati */
-}
-
-.booking-box button {
-    background-color: #ec1c89; /* Sfondo del bottone */
-    color: #fff; /* Colore del testo */
-    padding: 10px 20px; /* Padding interno */
-    border: none; /* Rimuove i bordi */
-    border-radius: 4px; /* Angoli arrotondati */
-    cursor: pointer; /* Cambia il cursore al passaggio */
-    font-size: 18px; /* Dimensione del testo */
-    display: block; /* Visualizzazione come blocco */
-    width: 100%; /* Larghezza completa */
-    text-align: center; /* Testo centrato */
-}
-
-.booking-box button:hover {
-    background-color: #d81b74; /* Colore al passaggio del mouse */
-}
-
-/* Informazioni di contatto */
+ .booking-box {
+        background-color: #fff;
+        padding: 40px;
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+    .booking-box h2 {
+        color: #ec1c89;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .booking-box label {
+        font-size: 18px;
+        color: #333;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .booking-box select,
+    .booking-box input[type="date"],
+    .booking-box textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .booking-box button {
+        background-color: #ec1c89;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .booking-box button:hover {
+        background-color: #d81b74;
+    }
+  .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .social-media {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+/* Contenitore delle informazioni di contatto */
 .contact-info {
-    display: flex; /* Usa il layout flex */
-    justify-content: center; /* Allinea al centro orizzontalmente */
-    align-items: center; /* Allinea al centro verticalmente */
-    flex-direction: column; /* Dispone gli elementi in colonna */
-    margin-top: 20px; /* Margine superiore */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
-.social-media,
-.phone-number {
-    display: flex; /* Usa il layout flex */
-    align-items: center; /* Allinea gli elementi al centro */
-    margin-bottom: 10px; /* Margine inferiore */
+/* Social media (Instagram) */
+.social-media, .phone-number {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.social-logo,
-.phone-logo {
-    width: 50px; /* Larghezza dell'icona */
-    height: auto; /* Mantiene le proporzioni */
-    animation: bounce 2s infinite; /* Aggiunge un'animazione */
+/* Logo Instagram e icona della cornetta */
+.social-logo, .phone-logo {
+    width: 30px; /* Dimensione dell'icona */
+    height: auto;
+    margin-right: 10px;
 }
-
-.social-media p,
-.phone-number p {
-    font-size: 18px; /* Dimensione del testo */
-    color: #333; /* Colore del testo */
-}
-
-/* Animazione */
+/* Definizione dell'animazione di rimbalzo */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0); /* Posizione iniziale */
+        transform: translateY(0); /* Posizione originale */
     }
     40% {
-        transform: translateY(-20px); /* Salto verso l'alto */
+        transform: translateY(-20px); /* Solleva l'icona */
     }
     60% {
-        transform: translateY(-15px); /* Rimbalzo verso l'alto */
+        transform: translateY(-15px); /* Parziale ritorno alla posizione originale */
     }
+	
 }
-
+.social-logo, .phone-logo {
+    width: 50px; /* Dimensione iniziale dell'icona */
+    height: auto; /* Mantiene le proporzioni dell'icona */
+    animation: bounce 2s infinite; /* Applica l'animazione di rimbalzo per 2 secondi, ripetuta all'infinito */
+}
+/* Stile del testo per nome utente Instagram e numero di telefono */
+.social-media p, .phone-number p {
+    font-size: 18px;
+    color: #333;
+}
 /* Menu a tendina per mobile */
 .menu-toggle {
-    display: none; /* Nasconde il toggle per default */
-    flex-direction: column; /* Dispone gli elementi in colonna */
-    cursor: pointer; /* Cambia il cursore al passaggio */
+    display: none; /* Nasconde il menu toggle di default */
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .menu-toggle .bar {
-    height: 3px; /* Altezza delle barre */
-    width: 25px; /* Larghezza delle barre */
-    background-color: #333; /* Colore delle barre */
-    margin: 4px 0; /* Spaziatura tra le barre */
-    transition: all 0.3s ease; /* Aggiunge una transizione */
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: all 0.3s ease;
 }
 
-/* Responsive Design */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-/* Stili per la visualizzazione su dispositivi mobili (max-width: 768px) */
-@media (max-width: 768px) {
+.cart-icon-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.cart-icon {
+    font-size: 24px;
+    color: #ec1c89;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: row; /* Dispone gli elementi in riga */
+        flex-direction: row;
     }
 
     .navbar .nav-links {
-        display: none; /* Nasconde i link di default */
-        flex-direction: column; /* Dispone i link in colonna */
-        width: 100%; /* Larghezza completa */
-        position: absolute; /* Posizione assoluta */
-        top: 100px; /* Posiziona sotto l'header */
-        left: 0; /* Allinea a sinistra */
-        background-color: blue; /* Sfondo blu */
-        z-index: 1; /* Sovrappone agli altri elementi */
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: blue;
+        z-index: 1;
     }
 
     .navbar .nav-links.active {
-        display: flex; /* Mostra i link quando attivo */
+        display: flex;
     }
 
     .navbar .menu-icon {
-        display: block; /* Mostra l'icona del menu */
-        z-index: 2; /* Sovrappone agli altri elementi */
-        position: relative; /* Posiziona relativamente */
+        display: block;
+        z-index: 2;
+        position: relative;
     }
+}
 
+
+
+
+
+
+/* Nascondi la sezione recensioni su dispositivi mobili */
+@media (max-width: 768px) {
     #esperienze {
-        display: none; /* Nasconde la sezione esperienze su mobile */
+        display: none;
     }
-
+    
     .slider-section {
-        display: block; /* Mostra la sezione slider su mobile */
+        display: block; /* Mostra lo slider sui dispositivi mobili */
     }
+}
 
+/* Nascondi lo slider sui dispositivi più grandi */
+@media (min-width: 769px) {
+    .slider-section {
+        display: none;
+    }
+}
+/* Stili per la visualizzazione su dispositivi mobili */
+@media (max-width: 768px) {
     .how-it-works {
-        padding: 20px; /* Riduce il padding interno */
-        text-align: left; /* Testo allineato a sinistra */
+        padding: 20px;
+        text-align: left;
     }
 
     .steps {
-        display: flex; /* Usa il layout flex */
-        flex-direction: column; /* Dispone gli step in colonna */
+        display: flex;
+        flex-direction: column;
     }
 
     .step {
-        display: flex; /* Usa il layout flex */
-        align-items: flex-start; /* Allinea gli elementi in alto */
-        margin-bottom: 20px; /* Margine inferiore */
-        text-align: left; /* Testo allineato a sinistra */
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px; /* Spazio tra i passi */
+        text-align: left; /* Allinea il testo a sinistra */
     }
 
     .step-number {
-        font-size: 24px; /* Riduce la dimensione del numero */
-        margin-right: 15px; /* Margine destro */
+        font-size: 24px;
+        margin-right: 15px; /* Spazio tra il numero e la spiegazione */
         margin-bottom: 0; /* Rimuove il margine inferiore */
     }
 
     .step h3 {
-        font-size: 20px; /* Riduce la dimensione del titolo */
-        margin: 0; /* Rimuove i margini */
+        font-size: 20px;
+        margin: 0;
     }
 
     .step p {
-        font-size: 16px; /* Riduce la dimensione del testo */
-        margin-top: 5px; /* Aggiunge un piccolo margine superiore */
-    }
-
-    .cart-icon {
-        display: block; /* Mostra l'icona del carrello */
+        font-size: 16px;
+        margin-top: 5px;
     }
 }
+@media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+ 	}
+            /* Stile per schermi con larghezza massima di 768px: gli elementi del menu diventano verticali e con margine inferiore */
+            
+            nav ul li a {
+                font-size: 20px;
+            }
+            /* Riduce la dimensione del testo nei link del menu */
+            
+            .cart-icon {
+                display: block;
+                margin: 10px auto;
+            }
+            /* L'icona del carrello diventa un elemento di blocco centrato con margine superiore e inferiore */
+            
+            .content div {
+                width: 45%;
+            }
+            /* Aumenta la larghezza dei div del contenuto al 45% del contenitore */
 
+	.toggle_btn{
+		display: block;
+	}
+.dropdown {
+        display: none;
+    }
+    .dropdown.open {
+        display: block;
+    }
+
+    .nav-links {
+        display: none; /* Nasconde il menu principale */
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .cart-icon-container {
+        display: none;
+    }
+}
+        
+@media (max-width: 480px) {
+            .content div {
+                width: 100%;
+            }
+            /* Per schermi con larghezza massima di 480px: i div del contenuto occupano il 100% del contenitore */
+            
+            nav ul li a {
+                font-size: 18px;
+            }
+            /* Riduce ulteriormente la dimensione del testo nei link del menu */
+            
+            section {
+                padding: 30px 0;
+            }
+            /* Riduce il padding delle sezioni */
+        }
