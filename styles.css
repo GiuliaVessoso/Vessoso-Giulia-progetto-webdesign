@@ -388,11 +388,11 @@ footer a {
 /*RESPONSIVE*/
 
 @media screen and (max-width: 768px) {
-    .navbar{
-		flex-direction: row;
-	}
-	
-	.navbar .nav-links {
+    .navbar {
+        flex-direction: row;
+    }
+
+    .navbar .nav-links {
         display: none;
         flex-direction: column;
         width: 100%;
@@ -400,24 +400,20 @@ footer a {
         top: 100px;
         left: 0;
         background-color: blue;
-        z-index: 1;  /* Assicura che la tendina sia sotto l'icona */
+        z-index: 1;
     }
 
-    .navbar .nav-links li {
-        text-align: center;
-        margin: 15px 0;
+    .navbar .nav-links.active {
+        display: flex;
     }
 
     .navbar .menu-icon {
         display: block;
-        z-index: 2;  /* Assicura che l'icona del menu sia sopra la tendina */
-        position: relative;  /* Imposta la posizione relativa per permettere allo z-index di funzionare */
-    }
-    
-    .navbar .nav-links.active {
-        display: flex;
+        z-index: 2;
+        position: relative;
     }
 }
+
 
 
 
