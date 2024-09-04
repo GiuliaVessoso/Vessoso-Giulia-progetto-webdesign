@@ -10,8 +10,9 @@ body {
 /* Stile generale del corpo della pagina, con font, margini, padding e colore di sfondo */
 header{
 	
-    text-align: center;
-    padding: 10px 0;
+        text-align: center;
+	background-color: white;
+        padding: 10px 0;
 	position: fixed;
 	width: 100%;
 	top: 0;
