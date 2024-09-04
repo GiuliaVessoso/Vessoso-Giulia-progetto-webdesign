@@ -16,14 +16,6 @@ function toggleMenu() {
 
 
 
-
-   function toggleMenu() {
-        var navLinks = document.querySelector('.nav-links');
-        navLinks.classList.toggle('active');
-    }
-
-
-
     document.addEventListener('DOMContentLoaded', function() {
         // Mostra il popup quando la pagina è completamente caricata
         var popup = document.getElementById('discount-popup');
