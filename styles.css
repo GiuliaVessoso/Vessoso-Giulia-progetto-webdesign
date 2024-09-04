@@ -1,67 +1,69 @@
+/* Stile generale del corpo della pagina */
 body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f8f8f8;
+    font-family: Arial, sans-serif; /* Font principale */
+    margin: 0; /* Rimuove i margini di default */
+    padding: 0; /* Rimuove il padding di default */
+    background-color: #f8f8f8; /* Colore di sfondo */
 }
 
 /*ZONA MENU*/
 
-/* Stile generale del corpo della pagina, con font, margini, padding e colore di sfondo */
-header{
-	text-align: center;
-	background-color: white;
-        padding: 10px 0;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 999
+/* Header e Navbar */
+
+    text-align: center; /* Allinea il testo al centro */
+    background-color: white; /* Colore di sfondo bianco */
+    padding: 10px 0; /* Padding superiore e inferiore */
+    position: fixed; /* Fissa l'header in alto */
+    width: 100%; /* Larghezza completa */
+    top: 0; /* Posiziona l'header in cima */
+    left: 0; /* Allinea a sinistra */
+    z-index: 999; /* Z-index per sovrapposizione */
 }
 .navbar {
-    display: flex;
-	flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding: 15px;
+    display: flex; /* Usa il layout flex */
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    justify-content: space-between; /* Spazio tra gli elementi */
+    align-items: center; /* Allinea gli elementi al centro */
+    background-color: #fff; /* Colore di sfondo bianco */
+    padding: 15px; /* Padding interno */
 }
 
-/* Dimensione dell'immagine del logo nell'intestazione */
-.navbar .logo img{
-    width: 80px;
-    height: auto;
+.navbar .logo img {
+    width: 80px; /* Larghezza dell'immagine */
+    height: auto; /* Mantiene le proporzioni */
 }
-/* Stile del menu di navigazione, con sfondo bianco, testo centrato e padding */    
+
 .navbar .nav-links {
-    list-style: none;
-    display: flex;
-	padding: 0;
-	padding-top: 10px;
-    margin: 0;
-    transition: all 0.3s ease;  /* Aggiunta una transizione per vedere il cambio */
-}
-.navbar .nav-links li {
-    margin: 0 10px;
-	display: inline;
+    list-style: none; /* Rimuove i puntatori della lista */
+    display: flex; /* Usa il layout flex */
+    justify-content: center; /* Allinea gli elementi al centro */
+    align-items: center; /* Centra verticalmente gli elementi */
+    padding: 0; /* Rimuove il padding */
+    padding-top: 10px; /* Aggiunge padding in cima */
+    margin: 0; /* Rimuove i margini */
+    transition: all 0.3s ease; /* Aggiunge una transizione */
 }
 
-/* Rimuove i puntatori della lista, il padding e i margini di default del menu di navigazione */
+.navbar .nav-links li {
+    margin: 0 10px; /* Margine laterale per ogni link */
+    display: inline; /* Dispone gli elementi in linea */
+}
 
 .navbar .nav-links a {
-    color: #ec1c89;
-    text-decoration: none;
-    font-size: 24px;
+    color: #ec1c89; /* Colore del testo */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    font-size: 24px; /* Dimensione del testo */
 }
+
 .navbar .nav-links a:hover {
-    color: black;
+    color: black; /* Colore al passaggio del mouse */
 }
 
 .navbar .menu-icon {
-    display: none;
-    font-size: 28px;
-    color: #ec1c89;
-    cursor: pointer;
+    display: none; /* Nasconde l'icona del menu di default */
+    font-size: 28px; /* Dimensione dell'icona */
+    color: #ec1c89; /* Colore dell'icona */
+    cursor: pointer; /* Cambia il cursore al passaggio */
 }
 
 
@@ -159,51 +161,45 @@ header{
     color: #d01a7e;
 }
 
-/*CORPO*/
-        section {
-            padding: 50px 0;
-            text-align: center;
-        }
-        /* Stile delle sezioni della pagina: padding e testo centrato */
-        
-        h2 {
-            color: #ec1c89;
-        }
-        /* Colore dei titoli h2 */
-        
-        .content {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        /* Stile del contenitore del contenuto: display flessibile, distribuzione degli elementi e wrapping */
-        
-        .content div {
-            width: 30%;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        /* Stile dei div all'interno del contenitore del contenuto: larghezza, margine e testo centrato */
-        
-        .content img {
-            max-width: 100%;
-            height: auto;
-        }
-        /* Dimensione delle immagini nel contenuto: larghezza massima e altezza proporzionale */
-        
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-footer a {
-	color: #ec1c89;
+/* Corpo della pagina */
+section {
+    padding: 50px 0; /* Padding superiore e inferiore */
+    text-align: center; /* Testo centrato */
 }
-        /* Stile del footer: colore di sfondo, colore del testo, padding e testo centrato */
-        
 
+h2 {
+    color: #ec1c89; /* Colore dei titoli h2 */
+}
+
+.content {
+    display: flex; /* Usa il layout flex */
+    justify-content: space-around; /* Distribuisce gli elementi */
+    flex-wrap: wrap; /* Permette il wrapping degli elementi */
+    margin-top: 20px; /* Margine superiore */
+}
+
+.content div {
+    width: 30%; /* Larghezza relativa dei contenitori */
+    margin-bottom: 30px; /* Margine inferiore */
+    text-align: center; /* Testo centrato */
+}
+
+.content img {
+    max-width: 100%; /* Larghezza massima delle immagini */
+    height: auto; /* Mantiene le proporzioni */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Colore di sfondo scuro */
+    color: #fff; /* Colore del testo bianco */
+    padding: 20px 0; /* Padding superiore e inferiore */
+    text-align: center; /* Testo centrato */
+}
+
+footer a {
+    color: #ec1c89; /* Colore dei link nel footer */
+}
 /* Stili per la versione desktop */
 .how-it-works {
     background-color: #fff;
@@ -412,11 +408,6 @@ footer a {
         position: relative;
     }
 }
-
-
-
-
-
 
 /* Nascondi la sezione recensioni su dispositivi mobili */
 @media (max-width: 768px) {
