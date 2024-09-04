@@ -358,7 +358,42 @@ footer a {
     transition: all 0.3s ease; /* Aggiunge una transizione */
 }
 
+
+/* Nascondi il menu per default */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Mostra il menu quando la classe "active" è aggiunta */
+.nav-links.active {
+    display: flex;
+}
+
+/* Mostra l'icona del menu nella visualizzazione mobile */
+.menu-icon {
+    display: block;
+}
+
+
+
+
 /* Responsive Design */
+
+
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+
 
 /* Stili per la visualizzazione su dispositivi mobili (max-width: 768px) */
 @media (max-width: 768px) {
