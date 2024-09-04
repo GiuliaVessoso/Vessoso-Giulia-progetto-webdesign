@@ -8,107 +8,68 @@ body {
 /*ZONA MENU*/
 
 /* Stile generale del corpo della pagina, con font, margini, padding e colore di sfondo */
-header {
-            background-color: #fff;
-            text-align: center;
-            padding: 20px 0;
-} 
-.toggle_btn{
-    display: none;
-    cursor: pointer;
-	font-size: 3.6rem;
-	color: #ec1c89;
-	z-index: 1000;
+header{
+	background-color: red;
+    text-align: center;
+    padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
 }
-
-/*DROPDOWN MENU*/
-.dropdown{
-	position: absolute;
-	display: none;
-	top: 100px;
-	right: 0;
-	width: 30%;
-	padding: 0;
-	background: rgba(0, 0, 0, 0.8);
-	backdrop-filter: blur(20px);
-	border-radius: 2rem;
-	z-index: 1000;
-	height: 0px;
-}
-.dropdown.open{
-	height: 320px;
-	padding: 1rem;
-	margin: 0;
-	display: flex;
+.navbar {
+    display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
 }
 
-/* Stile dell'intestazione della pagina, con sfondo bianco, testo centrato e padding */
-.logo img {
-            width: 80px;
-            height: auto;
-}
 /* Dimensione dell'immagine del logo nell'intestazione */
-nav {
-            background-color: #fff;
-            text-align: center;
-            padding: 10px 0;
+.navbar .logo img{
+    width: 80px;
+    height: auto;
 }
 /* Stile del menu di navigazione, con sfondo bianco, testo centrato e padding */    
-nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+	padding: 0;
+	padding-top: 10px;
+    margin: 0;
+    transition: all 0.3s ease;  /* Aggiunta una transizione per vedere il cambio */
 }
+.navbar .nav-links li {
+    margin: 0 10px;
+	display: inline;
+}
+
 /* Rimuove i puntatori della lista, il padding e i margini di default del menu di navigazione */
-nav ul li {
-            display: inline;
-            margin-right: 20px;
+
+.navbar .nav-links a {
+    color: #ec1c89;
+    text-decoration: none;
+    font-size: 24px;
 }
-/* Visualizza gli elementi della lista di navigazione in linea orizzontale e aggiunge margine tra di essi */
-nav ul li a {
-            text-decoration: none;
-            color: #ec1c89;
-            font-size: 24px;
-            transition: color 0.3s ease;
+.navbar .nav-links a:hover {
+    color: blue;
 }
-/* Stile dei link nel menu di navigazione: nessuna decorazione, colore, dimensione del testo e transizione per il cambio colore */     
-nav ul li a:hover {
-            color: #333;
-        }
-        /* Cambia il colore del link al passaggio del mouse */
-        
-        .cart-icon {
-            margin-left: 20px;
-            font-size: 24px;
-            color: #ec1c89;
-        }
-        /* Stile dell'icona del carrello: margine, dimensione del font e colore */
+
+.navbar .menu-icon {
+    display: none;
+    font-size: 28px;
+    color: #ec1c89;
+    cursor: pointer;
+}
+
+
 /* Nascondi la sezione recensioni per dispositivi mobili */
 #esperienze {
     display: block; /* Mostra la sezione recensioni per default */
 }
 
-/* Nascondi la sezione recensioni su dispositivi mobili */
-@media (max-width: 768px) {
-    #esperienze {
-        display: none;
-    }
-    
-    .slider-section {
-        display: block; /* Mostra lo slider sui dispositivi mobili */
-    }
-}
 
-/* Nascondi lo slider sui dispositivi più grandi */
-@media (min-width: 769px) {
-    .slider-section {
-        display: none;
-    }
-}
 
 /* Stili per lo slider */
 .swiper-container {
@@ -284,41 +245,7 @@ footer a {
     color: #333;
 }
 
-/* Stili per la visualizzazione su dispositivi mobili */
-@media (max-width: 768px) {
-    .how-it-works {
-        padding: 20px;
-        text-align: left;
-    }
 
-    .steps {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .step {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 20px; /* Spazio tra i passi */
-        text-align: left; /* Allinea il testo a sinistra */
-    }
-
-    .step-number {
-        font-size: 24px;
-        margin-right: 15px; /* Spazio tra il numero e la spiegazione */
-        margin-bottom: 0; /* Rimuove il margine inferiore */
-    }
-
-    .step h3 {
-        font-size: 20px;
-        margin: 0;
-    }
-
-    .step p {
-        font-size: 16px;
-        margin-top: 5px;
-    }
-}
 
  .booking-box {
         background-color: #fff;
@@ -457,6 +384,95 @@ footer a {
 }
 
 /*RESPONSIVE*/
+
+@media screen and (max-width: 768px) {
+    .navbar{
+		flex-direction: row;
+	}
+	
+	.navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: blue;
+        z-index: 1;  /* Assicura che la tendina sia sotto l'icona */
+    }
+
+    .navbar .nav-links li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+        z-index: 2;  /* Assicura che l'icona del menu sia sopra la tendina */
+        position: relative;  /* Imposta la posizione relativa per permettere allo z-index di funzionare */
+    }
+    
+    .navbar .nav-links.active {
+        display: flex;
+    }
+}
+
+
+
+
+
+/* Nascondi la sezione recensioni su dispositivi mobili */
+@media (max-width: 768px) {
+    #esperienze {
+        display: none;
+    }
+    
+    .slider-section {
+        display: block; /* Mostra lo slider sui dispositivi mobili */
+    }
+}
+
+/* Nascondi lo slider sui dispositivi più grandi */
+@media (min-width: 769px) {
+    .slider-section {
+        display: none;
+    }
+}
+/* Stili per la visualizzazione su dispositivi mobili */
+@media (max-width: 768px) {
+    .how-it-works {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .steps {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .step {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px; /* Spazio tra i passi */
+        text-align: left; /* Allinea il testo a sinistra */
+    }
+
+    .step-number {
+        font-size: 24px;
+        margin-right: 15px; /* Spazio tra il numero e la spiegazione */
+        margin-bottom: 0; /* Rimuove il margine inferiore */
+    }
+
+    .step h3 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .step p {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+}
 @media (max-width: 768px) {
             nav ul li {
                 display: block;
