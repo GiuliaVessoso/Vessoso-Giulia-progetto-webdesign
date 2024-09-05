@@ -4,29 +4,35 @@ function toggleMenu() {
     
     navLinks.classList.toggle('active');
 
-    // Cambia l'icona da hamburger a X
-    if (navLinks.classList.contains('active')) {
-        menuIcon.innerHTML = '&#10006;'; // X
-    } else {
-        menuIcon.innerHTML = '&#9776;';  // Hamburger (☰)
+       // Cambia l'icona da hamburger a X
+        if (navLinks.classList.contains('active')) {
+            menuIcon.innerHTML = '&#10006;'; // X
+        } else {
+            menuIcon.innerHTML = '&#9776;';  // Hamburger (☰)
+        }
+        
+        console.log('Menu toggled!');  // Messaggio di controllo per verificare il click
+    }
+    
+    // Aggiungi l'evento click all'icona del menu
+    const menuIcon = document.querySelector('.menu-icon');
+    if (menuIcon) {
+        menuIcon.addEventListener('click', toggleMenu);
     }
 
-    console.log('Menu toggled!');  // Messaggio di controllo per verificare il click
-}
-
-
-
-    document.addEventListener('DOMContentLoaded', function() {
-        // Mostra il popup quando la pagina è completamente caricata
-        var popup = document.getElementById('discount-popup');
-        var closeButton = document.querySelector('.close-btn');
-        
+    // Mostra il popup quando la pagina è completamente caricata
+    var popup = document.getElementById('discount-popup');
+    var closeButton = document.querySelector('.close-btn');
+    
+    if (popup) {
         popup.style.display = 'flex'; // Mostra il popup
         
         // Chiudi il popup quando si clicca sul pulsante di chiusura
-        closeButton.addEventListener('click', function() {
-            popup.style.display = 'none';
-        });
+        if (closeButton) {
+            closeButton.addEventListener('click', function() {
+                popup.style.display = 'none';
+            });
+        }
         
         // Chiudi il popup quando si clicca fuori dal contenuto del popup
         window.addEventListener('click', function(event) {
@@ -34,9 +40,7 @@ function toggleMenu() {
                 popup.style.display = 'none';
             }
         });
-    });
-
-
-          
+    }
+});
   
 
