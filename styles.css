@@ -75,7 +75,7 @@ header{
 /* Stili per lo slider */
 .swiper-container {
     width: 100%;
-    height: 400px; /* Imposta l'altezza desiderata per lo slider */
+    height: 100%;
 }
 
 .swiper-slide {
@@ -399,7 +399,7 @@ footer a {
         top: 100px;
         left: 0;
         background-color: white;
-        z-index: 999;
+        z-index: 1;
     }
 
     .navbar .nav-links.active {
@@ -543,3 +543,4 @@ footer a {
             }
             /* Riduce il padding delle sezioni */
         }
+
