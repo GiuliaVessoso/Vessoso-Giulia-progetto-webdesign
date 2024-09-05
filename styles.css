@@ -389,8 +389,9 @@ footer a {
 /* Stili per la versione mobile */
 @media screen and (max-width: 768px) {
     .navbar {
-        position: relative; /* Cambia la posizione a relativa */
-        padding: 10px 20px; /* Padding per evitare sovrapposizioni */
+        position: relative; /* Posiziona relativamente per mantenere il logo in posizione */
+        padding: 10px; /* Padding per evitare sovrapposizioni */
+        background-color: white; /* Assicura che il background sia bianco */
     }
 
     .navbar .menu-icon {
@@ -400,22 +401,27 @@ footer a {
         cursor: pointer;
         position: absolute; /* Posiziona assolutamente */
         top: 10px; /* Distanza dall'alto */
-        right: 20px; /* Allinea a destra con un po' di spazio */
+        right: 10px; /* Distanza dal lato destro */
         z-index: 1002; /* Assicurati che sia sopra al menu */
+    }
+
+    .navbar .logo {
+        position: absolute; /* Posiziona assolutamente */
+        top: 10px; /* Distanza dall'alto */
+        left: 10px; /* Distanza dal lato sinistro */
+        z-index: 1001; /* Assicurati che il logo sia sopra al menu */
     }
 
     .navbar .nav-links {
         display: none; /* Nascondi il menu di default */
         flex-direction: column;
         width: 100%; /* Occupa tutta la larghezza dello schermo */
-        position: fixed; /* Posizionamento fisso */
-        top: 0; /* Allinea al top della pagina */
+        position: absolute; /* Posizionamento assoluto */
+        top: 50px; /* Allinea sotto il logo */
         left: 0; /* Allinea a sinistra */
-        background-color: white;
+        background-color: white; /* Sfondo bianco */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra per il menu */
-        z-index: 1001; /* Assicurati che non copra altri contenuti importanti */
-        height: 100vh; /* Occupa tutta l'altezza dello schermo */
-        padding-top: 60px; /* Spazio per non coprire il logo */
+        z-index: 1000; /* Assicurati che non copra altri contenuti importanti */
     }
 
     .navbar .nav-links.active {
@@ -443,6 +449,7 @@ footer a {
         z-index: 999; /* Assicurati che sia sotto al menu */
     }
 }
+
 
 
 /* Nascondi la sezione recensioni su dispositivi mobili */
