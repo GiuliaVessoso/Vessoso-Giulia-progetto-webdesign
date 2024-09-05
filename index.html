@@ -182,17 +182,39 @@
         </section>
     </div>
 
-    <!-- Includere JavaScript per lo slider Swiper -->
+   	 <!-- Inclusione di Swiper.js -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mostra il popup quando la pagina è completamente caricata
+            var popup = document.getElementById('discount-popup');
+            var closeButton = document.querySelector('.close-btn');
+            
+            popup.style.display = 'flex'; // Mostra il popup
+            
+            // Chiudi il popup quando si clicca sul pulsante di chiusura
+            closeButton.addEventListener('click', function() {
+                popup.style.display = 'none';
+            });
+            
+            // Chiudi il popup quando si clicca fuori dal contenuto del popup
+            window.addEventListener('click', function(event) {
+                if (event.target === popup) {
+                    popup.style.display = 'none';
+                }
+            });
         });
     </script>
+
+<!-- Inizio del footer -->
+<footer>
+    <p>&copy; 2024 Agenzia di Viaggi. Tutti i diritti riservati.</p>
+    <p>
+        <a href="https://example.com/privacy-policy">Privacy Policy</a> | 
+        <a href="https://example.com/terms">Termini di Servizio</a>
+    </p>
+</footer>
+<!-- Fine del footer -->
+
 </body>
 </html>
