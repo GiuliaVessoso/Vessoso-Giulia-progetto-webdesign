@@ -372,6 +372,7 @@ footer a {
     padding: 0;
     margin: 0;
 }
+
 .cart-icon-container {
     display: flex;
     align-items: center;
@@ -390,33 +391,26 @@ footer a {
         flex-direction: row;
     }
 
-  .navbar .nav-links {
-    display: none; /* Nasconde il menu principale di default */
-    flex-direction: column;
-    width: 100%;
-    background-color: #fff; /* Imposta lo sfondo bianco */
-    position: absolute;
-    top: 60px; /* Regola in base all'altezza dell'intestazione */
-    left: 0;
-    z-index: 1001; /* Assicurati che sia sopra allo slider */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiungi un'ombra per un effetto di elevazione */
-}
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: white;
+        z-index: 999;
+    }
 
-.navbar .nav-links.active {
-    display: flex; /* Mostra il menu quando è attivo */
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
     .navbar .menu-icon {
         display: block;
         z-index: 2;
         position: relative;
     }
-}
-.menu-icon {
-    display: block; /* Assicurati che il pulsante sia visibile */
-    font-size: 28px;
-    color: #ec1c89;
-    cursor: pointer;
-    z-index: 1002; /* Assicurati che sia sopra agli altri elementi */
-    position: relative; /* Per garantire che l'icona si posizioni correttamente */
 }
 
 
