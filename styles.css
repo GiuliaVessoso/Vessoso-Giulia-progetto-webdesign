@@ -386,35 +386,49 @@ footer a {
 
 /*RESPONSIVE*/
 
+/* Stili per la versione mobile */
 @media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: row;
-    }
-
-    .navbar .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 100px;
-        left: 0;
-        background-color: white;
-        z-index: 999;
-    }
-
-    .navbar .nav-links.active {
-        display: flex;
+        position: relative; /* Cambia la posizione a relativa */
+        padding: 10px; /* Padding per evitare sovrapposizioni */
     }
 
     .navbar .menu-icon {
         display: block;
-        z-index: 2;
-        position: relative;
+        font-size: 28px;
+        color: #ec1c89;
+        cursor: pointer;
+        z-index: 1002; /* Assicurati che sia sopra al menu */
+        position: absolute; /* Posiziona assolutamente */
+        top: 10px; /* Distanza dall'alto */
+        right: 10px; /* Allinea a destra */
+    }
+
+    .navbar .nav-links {
+        display: none; /* Nascondi il menu di default */
+        flex-direction: column;
+        width: 300px; /* Imposta una larghezza fissa */
+        position: absolute; /* Posizionamento assoluto */
+        top: 50px; /* Distanza dal top per evitare sovrapposizioni con il logo */
+        right: 0; /* Allinea a destra */
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra per il menu */
+        z-index: 1001; /* Assicurati che non copra lo slider */
+    }
+
+    .navbar .nav-links.active {
+        display: flex; /* Mostra il menu quando è attivo */
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0; /* Margine per i link del menu */
+        text-align: center; /* Allinea il testo al centro */
+    }
+
+    .slider-section {
+        z-index: 999; /* Assicurati che lo slider sia sotto il menu */
     }
 }
-
-
-
 
 
 
