@@ -356,21 +356,20 @@ footer a {
     cursor: pointer;
 }
 
-.menu-toggle .bar {
-    height: 3px;
-    width: 25px;
-    background-color: #333;
-    margin: 4px 0;
-    transition: all 0.3s ease;
+.navbar .nav-links {
+    display: none; /* Nasconde il menu principale di default */
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff; /* Imposta lo sfondo bianco */
+    position: absolute;
+    top: 60px; /* Regola in base all'altezza dell'intestazione */
+    left: 0;
+    z-index: 1001; /* Assicurati che sia sopra allo slider */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiungi un'ombra per un effetto di elevazione */
 }
 
-.nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.navbar .nav-links.active {
+    display: flex; /* Mostra il menu quando è attivo */
 }
 
 .cart-icon-container {
