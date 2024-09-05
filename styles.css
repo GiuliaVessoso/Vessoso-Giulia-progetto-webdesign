@@ -410,6 +410,14 @@ footer a {
         position: relative;
     }
 }
+.menu-icon {
+    display: block; /* Assicurati che il pulsante sia visibile */
+    font-size: 28px;
+    color: #ec1c89;
+    cursor: pointer;
+    z-index: 1002; /* Assicurati che sia sopra agli altri elementi */
+    position: relative; /* Per garantire che l'icona si posizioni correttamente */
+}
 
 
 
