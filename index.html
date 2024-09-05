@@ -4,235 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <!--Importazione icone-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		
+    
+    <!-- Importazione icone Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Collegamento al foglio di stile -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Inclusione della libreria Swiper.js -->
+    
+    <!-- Inclusione della libreria Swiper.js per lo slider -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
-   <header>
-		<!--MENU-->
-		<nav class="navbar">
-			<div class="logo"><img src="logo.png" alt="Logo"></div>
-			<ul class="nav-links">
-				<li><a href="#esperienze">Esperienze</a></li>
-				<li><a href="#come-funziona">Come Funziona</a></li>
-				<li><a href="#prenota-viaggio">Prenota un Viaggio</a></li>
-				<li><a href="#contattaci">Contattaci</a></li>
-			</ul>
-			<div class="menu-icon" onclick="toggleMenu()">
-				&#9776;
-			</div>
-		</nav>
-	</header>
-	
-	<div class="contenuto">
-<!-- Contenitore per lo slider -->
-<section id="slider-section" class="slider-section">
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide">
-                <img src="istockphoto-876560704-612x612.jpg" alt="Recensione 1">
-                <p><strong>Recensione di Maria:</strong> "Fantastica esperienza! Il viaggio è stato organizzato alla perfezione e ho potuto godere di paesaggi mozzafiato."</p>
+    <!-- Inizio dell'header e della barra di navigazione -->
+    <header>
+        <!-- MENU -->
+        <nav class="navbar">
+            <!-- Logo del sito -->
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
             </div>
-            <!-- Slide 2 -->
-            <div class="swiper-slide">
-                <img src="mongolfiere-cappadocia-iStock-1080x720.jpg" alt="Recensione 2">
-                <p><strong>Recensione di Luca:</strong> "Non potevo chiedere di meglio! L'esperienza è stata incredibile e ho incontrato persone fantastiche durante il viaggio."</p>
+            <!-- Collegamenti di navigazione -->
+            <ul class="nav-links">
+                <li><a href="#esperienze">Esperienze</a></li>
+                <li><a href="#come-funziona">Come Funziona</a></li>
+                <li><a href="#prenota-viaggio">Prenota un Viaggio</a></li>
+                <li><a href="#contattaci">Contattaci</a></li>
+            </ul>
+            <!-- Icona del menu per la visualizzazione mobile -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
             </div>
-            <!-- Slide 3 -->
-            <div class="swiper-slide">
-                <img src="consigli-viaggio-Thailandia.jpg" alt="Recensione 3">
-                <p><strong>Recensione di Andrea:</strong> "Indimenticabile! Ho vissuto momenti unici durante questo viaggio e lo consiglio a tutti gli amanti dell'avventura."</p>
-            </div>
-        </div>
-       
-    </div>
-</section>
+        </nav>
+    </header>
 
-	<section id="esperienze">
-        <h2>Esperienze</h2>
-        <div class="content">
-            <div>
-                <img src="istockphoto-876560704-612x612.jpg" alt="ciao! aspetta che sto caricando" width="740" height="320">
-                <p><strong>Recensione di Maria:</strong> "Fantastica esperienza! Il viaggio è stato organizzato alla perfezione e ho potuto godere di paesaggi mozzafiato."</p>
+    <div class="contenuto">
+        <!-- Sezione slider con testimonianze -->
+        <section id="slider-section" class="slider-section">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="istockphoto-876560704-612x612.jpg" alt="Recensione 1">
+                        <p><strong>Recensione di Maria:</strong> "Fantastica esperienza! Il viaggio è stato organizzato alla perfezione e ho potuto godere di paesaggi mozzafiato."</p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="mongolfiere-cappadocia-iStock-1080x720.jpg" alt="Recensione 2">
+                        <p><strong>Recensione di Luca:</strong> "Non potevo chiedere di meglio! L'esperienza è stata incredibile e ho incontrato persone fantastiche durante il viaggio."</p>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="consigli-viaggio-Thailandia.jpg" alt="Recensione 3">
+                        <p><strong>Recensione di Andrea:</strong> "Indimenticabile! Ho vissuto momenti unici durante questo viaggio e lo consiglio a tutti gli amanti dell'avventura."</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="mongolfiere-cappadocia-iStock-1080x720.jpg" alt="image2.jpg" width="740" height="320">
-                <p><strong>Recensione di Luca:</strong> "Non potevo chiedere di meglio! L'esperienza è stata incredibile e ho incontrato persone fantastiche durante il viaggio."</p>
-            </div>
-            <div>
-                <img src="consigli-viaggio-Thailandia.jpg" alt="image3.jpg" width="740" height="320">
-                <p><strong>Recensione di Andrea:</strong> "Indimenticabile! Ho vissuto momenti unici durante questo viaggio e lo consiglio a tutti gli amanti dell'avventura."</p>
-            </div>
-        </div>
-		     
-    </section>
-    
-    
-    
-  <section id="come-funziona" class="how-it-works">
-    <h2>Come Funziona</h2>
-    <div class="steps">
-        <div class="step">
-            <div>
-                <span class="step-number">1</span>
-                <h3>Scegli la tua destinazione</h3>
-                <p>Seleziona la destinazione per il tuo prossimo viaggio tra le nostre mete disponibili.</p>
-            </div>
-        </div>
-        <div class="step">
-            <div>
-                <span class="step-number">2</span>
-                <h3>Personalizza il tuo viaggio</h3>
-                <p>Personalizza la tua esperienza di viaggio scegliendo le opzioni che preferisci, come il tipo di alloggio e le attività.</p>
-            </div>
-        </div>
-        <div class="step">
-            <div>
-                <span class="step-number">3</span>
-                <h3>Prenota e conferma</h3>
-                <p>Effettua il pagamento e ricevi la conferma della tua prenotazione via email con tutti i dettagli del viaggio.</p>
-            </div>
-        </div>
-        <div class="step">
-            <div>
-                <span class="step-number">4</span>
-                <h3>Goditi il viaggio</h3>
-                <p>Prepara le valigie e goditi un'esperienza di viaggio indimenticabile, con tutte le informazioni necessarie fornite da noi.</p>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-    
-   <section id="prenota-viaggio">
-    <!-- Box di prenotazione per i viaggi a sorpresa -->
-    <div class="booking-box">
-        <h2>Prenota un Viaggio a Sorpresa</h2>
-        <!-- Descrizione breve del processo di prenotazione -->
-        <p>Pianifica la tua prossima avventura con noi. Compila il modulo sottostante per prenotare un viaggio a sorpresa!</p>
-        <form>
-            <!-- Campo per selezionare la destinazione -->
-            <label for="destination">Destinazione a sorpresa:</label>
-            <select id="destination" name="destination">
-                <option value="europe">Europa</option>
-                <option value="asia">Asia</option>
-                <option value="america">America</option>
-            </select>
-            <br><br>
-            <!-- Campo per selezionare le date del viaggio -->
-            <label for="dates">Date di viaggio:</label>
-            <input type="date" id="dates" name="dates">
-            <br><br>
-            <!-- Campo per selezionare la durata del viaggio -->
-            <label for="duration">Durata del viaggio:</label>
-            <select id="duration" name="duration">
-                <option value="3days">3 giorni</option>
-                <option value="5days">5 giorni</option>
-                <option value="7days">7 giorni</option>
-            </select>
-            <br><br>
-            <!-- Campo per inserire preferenze opzionali -->
-            <label for="preferences">Preferenze (opzionale):</label>
-            <textarea id="preferences" name="preferences" rows="4" cols="50" placeholder="Inserisci le tue preferenze di viaggio qui..."></textarea>
-            <br><br>
-            <!-- Pulsante di invio del modulo -->
-            <button type="submit">Prenota Ora</button>
-        </form>
-    </div>
-</section>
+        <!-- Sezione esperienze con descrizioni dettagliate -->
+        <section id="esperienze">
+            <h2>Esperienze</h2>
+            <div class="content">
+                <!-- Esperienza 1 -->
+                <div>
+                    <img src="istockphoto-876560704-612x612.jpg" alt="ciao! aspetta che sto caricando" width="740" height="320">
+                    <p><strong>Recensione di Maria:</strong> "Fantastica esperienza! Il viaggio è stato organizzato alla perfezione e ho potuto godere di paesaggi mozzafiato."</p>
+                </div>
+                <!-- Esperienza 2 -->
+                <div>
+                    <img src="mongolfiere-cappadocia-iStock-1080x720.jpg" alt="image2.jpg" width="740" height="320">
+                    <p><strong>Recensione di Luca:</strong> "Non potevo chiedere di meglio! L'esperienza è stata incredibile e ho incontrato persone fantastiche durante il viaggio."</p>
+                </div>
+                <!-- Esperienza 3 -->
+                <div>
+                    <img src="consigli-viaggio-Thailandia.jpg" alt="image3.jpg" width="740" height="320">
+                    <p><strong>Recensione di Andrea:</strong> "Indimenticabile! Ho vissuto momenti unici durante questo viaggio e lo consiglio a tutti gli amanti dell'avventura."</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="contattaci">
-    <h2>Contattaci</h2>
-        <p>Contatta il nostro team per ulteriori informazioni.</p>
-        <!-- Informazioni di contatto -->
-        <div class="contact-info">
-            <!-- Social Media (Instagram) -->
-            <div class="social-media">
-                <img src="Instagram_icon.png.webp" alt="Instagram Logo" class="social-logo">
-                <p>@zephyr.agenziaviaggi</p>
+        <!-- Sezione "Come Funziona" con i passaggi per prenotare -->
+        <section id="come-funziona" class="how-it-works">
+            <h2>Come Funziona</h2>
+            <div class="steps">
+                <!-- Passaggio 1 -->
+                <div class="step">
+                    <div>
+                        <span class="step-number">1</span>
+                        <h3>Scegli la tua destinazione</h3>
+                        <p>Seleziona la destinazione per il tuo prossimo viaggio tra le nostre mete disponibili.</p>
+                    </div>
+                </div>
+                <!-- Passaggio 2 -->
+                <div class="step">
+                    <div>
+                        <span class="step-number">2</span>
+                        <h3>Personalizza il tuo viaggio</h3>
+                        <p>Personalizza la tua esperienza di viaggio scegliendo le opzioni che preferisci, come il tipo di alloggio e le attività.</p>
+                    </div>
+                </div>
+                <!-- Passaggio 3 -->
+                <div class="step">
+                    <div>
+                        <span class="step-number">3</span>
+                        <h3>Prenota e conferma</h3>
+                        <p>Effettua il pagamento e ricevi la conferma della tua prenotazione via email con tutti i dettagli del viaggio.</p>
+                    </div>
+                </div>
+                <!-- Passaggio 4 -->
+                <div class="step">
+                    <div>
+                        <span class="step-number">4</span>
+                        <h3>Goditi il viaggio</h3>
+                        <p>Prepara le valigie e goditi un'esperienza di viaggio indimenticabile, con tutte le informazioni necessarie fornite da noi.</p>
+                    </div>
+                </div>
             </div>
-            <!-- Numero di telefono -->
-            <div class="phone-number">
-                <img src="phone-handset-icon-isolated-white-background_89223-157.avif" alt="Phone Icon" class="phone-logo">
-                <p>+39 123 456 7890</p>
+        </section>
+
+        <!-- Sezione prenotazione del viaggio -->
+        <section id="prenota-viaggio">
+            <!-- Box di prenotazione per i viaggi a sorpresa -->
+            <div class="booking-box">
+                <h2>Prenota un Viaggio a Sorpresa</h2>
+                <!-- Descrizione breve del processo di prenotazione -->
+                <p>Pianifica la tua prossima avventura con noi. Compila il modulo sottostante per prenotare un viaggio a sorpresa!</p>
+                <form>
+                    <!-- Campo per selezionare la destinazione -->
+                    <label for="destination">Destinazione a sorpresa:</label>
+                    <select id="destination" name="destination">
+                        <option value="europe">Europa</option>
+                        <option value="asia">Asia</option>
+                        <option value="america">America</option>
+                    </select>
+                    <br><br>
+                    <!-- Campo per selezionare le date del viaggio -->
+                    <label for="dates">Date di viaggio:</label>
+                    <input type="date" id="dates" name="dates">
+                    <br><br>
+                    <!-- Campo per selezionare la durata del viaggio -->
+                    <label for="duration">Durata del viaggio:</label>
+                    <select id="duration" name="duration">
+                        <option value="3days">3 giorni</option>
+                        <option value="5days">5 giorni</option>
+                        <option value="7days">7 giorni</option>
+                    </select>
+                    <br><br>
+                    <!-- Campo per inserire preferenze opzionali -->
+                    <label for="preferences">Preferenze (opzionale):</label>
+                    <textarea id="preferences" name="preferences" rows="4" cols="50" placeholder="Inserisci le tue preferenze di viaggio qui..."></textarea>
+                    <br><br>
+                    <!-- Pulsante di invio del modulo -->
+                    <button type="submit">Prenota Ora</button>
+                </form>
             </div>
-    
-   
-        </div>
-    </section>
-	</div>
-	
-<!-- Inclusione di Swiper.js -->
+        </section>
+
+        <!-- Sezione contatti -->
+        <section id="contattaci">
+            <h2>Contattaci</h2>
+            <p>Contatta il nostro team per ulteriori informazioni.</p>
+            <!-- Informazioni di contatto -->
+            <div class="contact-info">
+                <!-- Social Media (Instagram) -->
+                <div class="social-media">
+                    <img src="Instagram_icon.png.webp" alt="Instagram Logo" class="social-logo">
+                    <p>@zephyr.agenziaviaggi</p>
+                </div>
+                <!-- Numero di telefono -->
+                <div class="phone-number">
+                    <img src="telefono.png" alt="Phone Icon">
+                    <p>+39 123 456 789</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Includere JavaScript per lo slider Swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 1,
-                spaceBetween: 10,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                loop: true,
-                autoplay: {
-                    delay: 3000, // Durata di 3 secondi per ogni slide
-                    disableOnInteraction: false, // Permette di continuare a scorrere anche dopo l'interazione dell'utente
-                },
-            });
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
         });
     </script>
-
-<!-- Popup di sconto -->
-<div id="discount-popup" class="popup">
-    <div class="popup-content">
-        <span class="close-btn">&times;</span>
-        <h1>Sconto Speciale del 20%!</h1>
-        <p>Benvenuto sul nostro sito!</p>
-        <p>Per te, uno sconto del <strong>20%</strong> valido dal <strong>30/08/2024</strong> al <strong>30/12/2024</strong>.</p>
-        <p>Non perdere l'occasione di risparmiare sui tuoi acquisti!</p>
-
-    </div>
-</div>
-	 <!-- Inclusione di Swiper.js -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mostra il popup quando la pagina è completamente caricata
-            var popup = document.getElementById('discount-popup');
-            var closeButton = document.querySelector('.close-btn');
-            
-            popup.style.display = 'flex'; // Mostra il popup
-            
-            // Chiudi il popup quando si clicca sul pulsante di chiusura
-            closeButton.addEventListener('click', function() {
-                popup.style.display = 'none';
-            });
-            
-            // Chiudi il popup quando si clicca fuori dal contenuto del popup
-            window.addEventListener('click', function(event) {
-                if (event.target === popup) {
-                    popup.style.display = 'none';
-                }
-            });
-        });
-    </script>
-
-<!-- Inizio del footer -->
-<footer>
-    <p>&copy; 2024 Agenzia di Viaggi. Tutti i diritti riservati.</p>
-    <p>
-        <a href="https://example.com/privacy-policy">Privacy Policy</a> | 
-        <a href="https://example.com/terms">Termini di Servizio</a>
-    </p>
-</footer>
-<!-- Fine del footer -->
-
 </body>
 </html>
-
