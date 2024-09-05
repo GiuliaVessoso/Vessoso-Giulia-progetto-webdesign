@@ -386,12 +386,12 @@ footer a {
 
 /*RESPONSIVE*/
 
-/* Stili per la versione mobile */
+/* Stili per il menu mobile */
 @media screen and (max-width: 768px) {
     .navbar {
-        position: relative; /* Posiziona relativamente per mantenere il logo in posizione */
-        padding: 10px; /* Padding per evitare sovrapposizioni */
-        background-color: white; /* Assicura che il background sia bianco */
+        position: relative; /* Mantiene il logo e il menu in posizione */
+        padding: 10px; /* Spazio intorno al contenuto */
+        background-color: white; /* Sfondo bianco per il menu */
     }
 
     .navbar .menu-icon {
@@ -399,16 +399,16 @@ footer a {
         font-size: 28px;
         color: #ec1c89;
         cursor: pointer;
-        position: absolute; /* Posiziona assolutamente */
-        top: 10px; /* Distanza dall'alto */
-        right: 10px; /* Distanza dal lato destro */
+        position: absolute; /* Posizionato assolutamente */
+        top: 10px;
+        right: 10px;
         z-index: 1002; /* Assicurati che sia sopra al menu */
     }
 
     .navbar .logo {
         position: absolute; /* Posiziona assolutamente */
-        top: 10px; /* Distanza dall'alto */
-        left: 10px; /* Distanza dal lato sinistro */
+        top: 10px;
+        left: 10px;
         z-index: 1001; /* Assicurati che il logo sia sopra al menu */
     }
 
@@ -422,33 +422,59 @@ footer a {
         background-color: white; /* Sfondo bianco */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra per il menu */
         z-index: 1000; /* Assicurati che non copra altri contenuti importanti */
+        overflow: hidden; /* Nasconde il contenuto che va oltre */
     }
 
     .navbar .nav-links.active {
         display: flex; /* Mostra il menu quando è attivo */
     }
 
-    .navbar .nav-links li {
-        margin: 10px 0; /* Margine per i link del menu */
-        text-align: right; /* Allinea il testo a destra */
-        padding: 0 20px; /* Spazio interno per il testo */
+    .navbar .nav-links .nav-item {
+        position: relative; /* Necessario per la posizione assoluta del sottomenù */
     }
 
-    .navbar .nav-links a {
+    .navbar .nav-links .nav-item > a {
+        padding: 15px;
+        display: block; /* Rende il link un blocco */
         color: #ec1c89;
-        font-size: 24px;
         text-decoration: none;
     }
 
-    .navbar .nav-links a:hover {
+    .navbar .nav-links .nav-item > a:hover {
         color: black;
     }
 
-    /* Assicurati che lo slider non venga coperto */
-    .slider-section {
-        z-index: 999; /* Assicurati che sia sotto al menu */
+    .navbar .nav-links .sub-menu {
+        display: none; /* Nascondi il sottomenù per default */
+        flex-direction: column;
+        background-color: #f8f8f8; /* Sfondo del sottomenù */
+        padding: 0;
+        margin: 0;
+        position: absolute; /* Posizionamento assoluto */
+        left: 0; /* Allinea a sinistra del menu principale */
+        top: 100%; /* Posiziona sotto il menu principale */
+        width: 100%; /* Occupa tutta la larghezza */
+    }
+
+    .navbar .nav-links .nav-item.active .sub-menu {
+        display: flex; /* Mostra il sottomenù quando il genitore è attivo */
+    }
+
+    .navbar .nav-links .sub-menu li {
+        padding: 10px;
+        text-align: right; /* Allinea il testo a destra */
+    }
+
+    .navbar .nav-links .sub-menu li a {
+        color: #ec1c89;
+        text-decoration: none;
+    }
+
+    .navbar .nav-links .sub-menu li a:hover {
+        color: black;
     }
 }
+
 
 
 
