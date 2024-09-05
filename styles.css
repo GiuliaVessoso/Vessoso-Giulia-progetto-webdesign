@@ -390,7 +390,7 @@ footer a {
 @media screen and (max-width: 768px) {
     .navbar {
         position: relative; /* Cambia la posizione a relativa */
-        padding: 10px; /* Padding per evitare sovrapposizioni */
+        padding: 10px 20px; /* Padding per evitare sovrapposizioni */
     }
 
     .navbar .menu-icon {
@@ -398,22 +398,24 @@ footer a {
         font-size: 28px;
         color: #ec1c89;
         cursor: pointer;
-        z-index: 1002; /* Assicurati che sia sopra al menu */
         position: absolute; /* Posiziona assolutamente */
         top: 10px; /* Distanza dall'alto */
-        right: 10px; /* Allinea a destra */
+        right: 20px; /* Allinea a destra con un po' di spazio */
+        z-index: 1002; /* Assicurati che sia sopra al menu */
     }
 
     .navbar .nav-links {
         display: none; /* Nascondi il menu di default */
         flex-direction: column;
-        width: 300px; /* Imposta una larghezza fissa */
-        position: absolute; /* Posizionamento assoluto */
-        top: 50px; /* Distanza dal top per evitare sovrapposizioni con il logo */
-        right: 0; /* Allinea a destra */
+        width: 100%; /* Occupa tutta la larghezza dello schermo */
+        position: fixed; /* Posizionamento fisso */
+        top: 0; /* Allinea al top della pagina */
+        left: 0; /* Allinea a sinistra */
         background-color: white;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra per il menu */
-        z-index: 1001; /* Assicurati che non copra lo slider */
+        z-index: 1001; /* Assicurati che non copra altri contenuti importanti */
+        height: 100vh; /* Occupa tutta l'altezza dello schermo */
+        padding-top: 60px; /* Spazio per non coprire il logo */
     }
 
     .navbar .nav-links.active {
@@ -422,14 +424,25 @@ footer a {
 
     .navbar .nav-links li {
         margin: 10px 0; /* Margine per i link del menu */
-        text-align: center; /* Allinea il testo al centro */
+        text-align: right; /* Allinea il testo a destra */
+        padding: 0 20px; /* Spazio interno per il testo */
     }
 
+    .navbar .nav-links a {
+        color: #ec1c89;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    .navbar .nav-links a:hover {
+        color: black;
+    }
+
+    /* Assicurati che lo slider non venga coperto */
     .slider-section {
-        z-index: 999; /* Assicurati che lo slider sia sotto il menu */
+        z-index: 999; /* Assicurati che sia sotto al menu */
     }
 }
-
 
 
 /* Nascondi la sezione recensioni su dispositivi mobili */
