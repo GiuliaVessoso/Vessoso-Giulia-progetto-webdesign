@@ -72,6 +72,10 @@ section::before {
     margin-top: -60px; /* Rimuove il margine superiore extra */
     visibility: hidden; /* Rende invisibile lo spazio di compensazione */
 }
+section {
+    padding: 50px 0; /* Mantieni il padding esistente */
+    text-align: center;
+}
 
 
 /* Nascondi la sezione recensioni per dispositivi mobili */
