@@ -217,6 +217,26 @@ html: <!DOCTYPE html>
         });
     </script>
 
+	<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1, // Numero di slide visibili alla volta
+        loop: true, // Abilita il looping
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000, // Tempo di attesa prima di cambiare slide (in ms)
+            disableOnInteraction: false, // Continua l'autoplay anche dopo interazioni
+        },
+    });
+</script>
+
+
 <!-- Inizio del footer -->
 <footer>
     <p>&copy; 2024 Agenzia di Viaggi. Tutti i diritti riservati.</p>
