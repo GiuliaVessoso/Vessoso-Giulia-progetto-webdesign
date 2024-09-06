@@ -394,38 +394,31 @@ footer a {
         flex-direction: row;
     }
 
-.navbar .nav-links {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-20px); /* Solleva leggermente il menu */
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
-    position: absolute;
-    width: 100%;
-    top: 100px;
-    left: 0;
-    background-color: white;
-    z-index: 999;
-    flex-direction: column;
-}
+    /* Menu inizialmente nascosto, altezza 0 per permettere la transizione */
+    .navbar .nav-links {
+        max-height: 0;  /* Altezza iniziale nulla */
+        overflow: hidden;  /* Nasconde il contenuto */
+        transition: max-height 0.5s ease-in-out;  /* Aggiunge transizione fluida */
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        left: 0;
+        background-color: white;
+        z-index: 999;
+        flex-direction: column;
+    }
 
-.navbar .nav-links.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
+    /* Quando è attiva, espande il menu */
+    .navbar .nav-links.active {
+        max-height: 300px;  /* Puoi regolare l'altezza massima in base al numero di link */
+    }
 
     .navbar .menu-icon {
         display: block;
-        z-index: 2;
+        z-index: 1000;
         position: relative;
     }
 }
-
-
-
-
-
 
 /* Nascondi la sezione recensioni su dispositivi mobili */
 @media (max-width: 768px) {
