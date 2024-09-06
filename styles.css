@@ -93,24 +93,18 @@ header{
     height: auto;
 }
 
-/* Paginazione puntini */
-.swiper-pagination-bullet {
-    background-color: #000; /* Colore dei puntini */
-}
-
+/* Stile per i puntini di paginazione */
 .swiper-pagination {
-    bottom: 480px; /* Alza ancora di più i puntini verso l'alto */
+    position: absolute;
+    bottom: 10px; /* Regola questo valore in base alle tue esigenze */
+    left: 50%;
+    transform: translateX(-50%); /* Centra i puntini orizzontalmente */
+    z-index: 10; /* Assicurati che i puntini siano visibili sopra lo slider */
 }
 
-
-/* Ridurre lo spazio tra il contenitore dello slider e la sezione successiva */
-.slider-section {
-    margin-bottom: 30px; /* Riduce lo spazio inferiore dello slider */
-}
-
-/* Regola lo spazio sopra la sezione "come funziona" */
+/* Stile per la sezione "Come Funziona" */
 .how-it-works {
-    margin-top: 80px; /* Riduce lo spazio superiore della sezione */
+    margin-top: 20px; /* Spazio sopra la sezione "Come Funziona" */
 }
 
 
