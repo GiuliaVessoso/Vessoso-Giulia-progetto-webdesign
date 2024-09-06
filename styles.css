@@ -105,12 +105,12 @@ header{
 
 /* Ridurre lo spazio tra il contenitore dello slider e la sezione successiva */
 .slider-section {
-    margin-bottom: 5px; /* Riduce lo spazio inferiore dello slider */
+    margin-bottom: 30px; /* Riduce lo spazio inferiore dello slider */
 }
 
 /* Regola lo spazio sopra la sezione "come funziona" */
 .how-it-works {
-    margin-top: 50px; /* Riduce lo spazio superiore della sezione */
+    margin-top: 80px; /* Riduce lo spazio superiore della sezione */
 }
 
 
