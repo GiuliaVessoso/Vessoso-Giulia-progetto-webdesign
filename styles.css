@@ -394,20 +394,26 @@ footer a {
         flex-direction: row;
     }
 
-    .navbar .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 100px;
-        left: 0;
-        background-color: white;
-        z-index: 1;
-    }
+.navbar .nav-links {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px); /* Solleva leggermente il menu */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+    flex-direction: column;
+}
 
-    .navbar .nav-links.active {
-        display: flex;
-    }
+.navbar .nav-links.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 
     .navbar .menu-icon {
         display: block;
