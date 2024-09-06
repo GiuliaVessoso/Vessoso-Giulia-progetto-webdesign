@@ -220,19 +220,15 @@ html: <!DOCTYPE html>
         });
     </script>
 
-	<script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1, // Numero di slide visibili alla volta
-        loop: true, // Abilita il looping continuo
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        autoplay: {
-            delay: 3000, // Intervallo tra una slide e l'altra (in millisecondi)
-            disableOnInteraction: false, // Continua l'autoplay anche dopo interazioni
-        },
-    });
+var swiper = new Swiper('.swiper-container', {
+    loop: true, // Continuo loop delle slide
+    autoplay: {
+        delay: 3000, // Cambia slide ogni 3 secondi
+        disableOnInteraction: false, // Continua a scorrere anche dopo l'interazione
+    },
+    pagination: false, // Disabilita i puntini
+});
+
 </script>
 
 
