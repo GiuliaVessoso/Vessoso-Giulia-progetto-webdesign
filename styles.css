@@ -99,8 +99,9 @@ header{
 }
 
 .swiper-pagination {
-    bottom: 80px; /* Alza i puntini di paginazione verso l'alto */
+    bottom: 80px; /* Alza ancora di più i puntini verso l'alto */
 }
+
 
 /* Ridurre lo spazio tra il contenitore dello slider e la sezione successiva */
 .slider-section {
