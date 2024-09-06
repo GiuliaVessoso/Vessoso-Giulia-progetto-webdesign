@@ -455,13 +455,19 @@ footer a {
     }
 }
 
-/* Nascondi la sezione recensioni su dispositivi mobili */
-@media (max-width: 768px) {
-    #esperienze {
-        display: block; /* Mostra la sezione recensioni */
+/* Nascondi lo slider nella versione web */
+@media (min-width: 769px) {
+    .slider-section {
+        display: none; /* Nasconde lo slider su schermi più grandi (desktop) */
     }
 }
 
+/* Mostra lo slider sui dispositivi mobili */
+@media (max-width: 768px) {
+    .slider-section {
+        display: block; /* Mostra lo slider su schermi più piccoli (mobile) */
+    }
+}
     .slider-section {
         display: block; /* Mostra lo slider sui dispositivi mobili */
     }
