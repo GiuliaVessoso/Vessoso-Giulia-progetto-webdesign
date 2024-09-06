@@ -475,7 +475,7 @@ footer a {
 /* Stili per la visualizzazione su dispositivi mobili */
 @media (max-width: 768px) {
     .how-it-works {
-        padding: 20px;
+        padding: 70px;
         text-align: left;
     }
 
