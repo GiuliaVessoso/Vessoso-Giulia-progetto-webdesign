@@ -66,17 +66,30 @@ header{
 
 
 
-/* Nascondi la sezione recensioni per dispositivi mobili */
-#esperienze {
-    display: block; /* Mostra la sezione recensioni per default */
+/* Stili generali per lo slider */
+.slider-section {
+    /* Stili base per lo slider */
 }
 
+/* Nascondi lo slider nella versione web */
+@media (min-width: 769px) {
+    .slider-section {
+        display: none; /* Nasconde lo slider su schermi più grandi (desktop) */
+    }
+}
 
-/* Stile per il contenitore dello slider */
-.swiper-container {
-    position: relative;
-    max-height: 400px; /* Imposta l'altezza massima del contenitore */
-    overflow: hidden; /* Nasconde il contenuto che esce dal contenitore */
+/* Mostra lo slider sui dispositivi mobili */
+@media (max-width: 768px) {
+    .slider-section {
+        display: block; /* Mostra lo slider su schermi più piccoli (mobile) */
+    }
+}
+
+/* Nascondi la sezione recensioni nella versione mobile */
+@media (max-width: 768px) {
+    #esperienze {
+        display: none; /* Nasconde la sezione recensioni su schermi piccoli (mobile) */
+    }
 }
 
 /* Stile per le slide dello slider */
