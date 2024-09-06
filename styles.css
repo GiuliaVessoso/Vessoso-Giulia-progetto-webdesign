@@ -71,7 +71,7 @@ header{
     /* Stili base per lo slider */
 }
 
-/* Nascondi lo slider nella versione web */
+/* Nascondi lo slider nella versione web (desktop) */
 @media (min-width: 769px) {
     .slider-section {
         display: none; /* Nasconde lo slider su schermi più grandi (desktop) */
