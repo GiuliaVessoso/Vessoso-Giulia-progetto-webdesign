@@ -439,14 +439,15 @@ footer a {
         top: 60px;
         left: 0;
         background-color: white;
-        z-index: 999;
+        z-index: 0;
         flex-direction: column;
     }
 
     /* Quando è attiva, espande il menu */
     .navbar .nav-links.active {
         top:100px;
-        max-height: 300px;  /* Puoi regolare l'altezza massima in base al numero di link */
+	z-index: 999;
+	max-height: 300px;  /* Puoi regolare l'altezza massima in base al numero di link */
     }
 
     .navbar .menu-icon {
