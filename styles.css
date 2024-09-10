@@ -89,7 +89,7 @@ header{
 /* Stile per il contenitore dello slider */
 .swiper-container {
     position: relative;
-    max-height: 400px; /* Imposta l'altezza massima del contenitore */
+    max-height: 450px; /* Imposta l'altezza massima del contenitore */
     overflow: hidden; /* Nasconde il contenuto che esce dal contenitore */
 }
 
