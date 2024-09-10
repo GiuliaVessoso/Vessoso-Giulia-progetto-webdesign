@@ -111,7 +111,7 @@ header{
 /* Stile per il testo all'interno delle slide */
 .swiper-slide p {
     position: absolute;
-    bottom: 0; /* Spazio dal fondo del contenitore */
+    bottom: 10px; /* Spazio dal fondo del contenitore */
     left: 50%;
     transform: translateX(-50%);
     color: #fff; /* Colore del testo, modifica se necessario */
