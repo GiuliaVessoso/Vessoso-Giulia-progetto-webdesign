@@ -446,16 +446,20 @@ footer a {
         flex-direction: column;
 	padding: 0;
 	marging: 0;
+	align-items: left;
     }
 
     /* Quando è attiva, espande il menu */
     .navbar .nav-links.active {
         top:100px;
 	z-index: 999;
-	max-height: 300px;  /* Puoi regolare l'altezza massima in base al numero di link */
+	max-height: 800px;  /* Puoi regolare l'altezza massima in base al numero di link */
 	padding-top: 10px;
     }
-
+    .navbar .nav-links li {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
     .navbar .menu-icon {
         display: block;
         z-index: 1000;
