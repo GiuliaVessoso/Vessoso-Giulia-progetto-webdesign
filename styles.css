@@ -1,3 +1,7 @@
+html{
+	scroll-margin-top: 150px; 
+}
+
 body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -212,7 +216,7 @@ header{
         
         h2 {
             color: #ec1c89;
-	    scroll-margin-top: 100px; 
+	    
         }
         /* Colore dei titoli h2 */
         
