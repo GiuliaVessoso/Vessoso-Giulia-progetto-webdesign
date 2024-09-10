@@ -81,7 +81,7 @@ header{
 .slider-section {
     display: none; /* Mostra la sezione recensioni per default */
 }
-.sezioneesperienzedeskto{
+.sezionesperienzedesktop{
 	display: block;
 }
 
@@ -486,7 +486,7 @@ footer a {
 	.slider-section {
 	    	display: block;
 	}
-	.sezioneesperienzedeskto{
+	.sezionesperienzedesktop{
 		display: none;
 	}
 }
