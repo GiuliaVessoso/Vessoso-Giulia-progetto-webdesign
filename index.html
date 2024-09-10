@@ -256,6 +256,27 @@
 </script>
 	
 
+	
+<script>
+    // Seleziona l'icona del menu e il menu stesso
+    const menuIcon = document.querySelector('.menu-icon');
+    const navLinks = document.querySelector('.nav-links');
+    const navLinksItems = document.querySelectorAll('.nav-links li');
+
+    // Funzione per aprire/chiudere il menu
+    menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    // Funzione per chiudere il menu quando viene cliccato un link
+    navLinksItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+</script>
+
+
 
 	
 </body>
