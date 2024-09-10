@@ -453,7 +453,7 @@ footer a {
     .navbar .nav-links.active {
         top:100px;
 	z-index: 999;
-	max-height: 100%;  /* Puoi regolare l'altezza massima in base al numero di link */
+	max-height: calc(100vh -100px);  /* Puoi regolare l'altezza massima in base al numero di link */
 	padding-top: 10px;
     }
     .navbar .nav-links li {
