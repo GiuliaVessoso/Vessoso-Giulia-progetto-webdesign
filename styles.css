@@ -31,8 +31,10 @@ header{
 .navbar .logo img{
     width: 80px;
     height: auto;
-    z-index: 1000;
+    z-index: 1001;
+    position: relative;
 }
+
 /* Stile del menu di navigazione, con sfondo bianco, testo centrato e padding */    
 .navbar .nav-links {
     list-style: none;
@@ -442,6 +444,8 @@ footer a {
         background-color: white;
         z-index: 0;
         flex-direction: column;
+	padding: 0;
+	marging: 0;
     }
 
     /* Quando è attiva, espande il menu */
@@ -449,6 +453,7 @@ footer a {
         top:100px;
 	z-index: 999;
 	max-height: 300px;  /* Puoi regolare l'altezza massima in base al numero di link */
+	padding-top: 10px;
     }
 
     .navbar .menu-icon {
