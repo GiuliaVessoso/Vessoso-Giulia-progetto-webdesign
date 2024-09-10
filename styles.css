@@ -16,11 +16,11 @@ header{
 	width: 100%;
 	top: 0;
 	left: 0;
-	z-index: 999
+	z-index: 999;
 }
 .navbar {
     display: flex;
-	flex-direction: column;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
@@ -31,19 +31,20 @@ header{
 .navbar .logo img{
     width: 80px;
     height: auto;
+    z-index: 1000;
 }
 /* Stile del menu di navigazione, con sfondo bianco, testo centrato e padding */    
 .navbar .nav-links {
     list-style: none;
     display: flex;
-	padding: 0;
-	padding-top: 10px;
+    padding: 0;
+    padding-top: 10px;
     margin: 0;
     transition: all 0.3s ease;  /* Aggiunta una transizione per vedere il cambio */
 }
 .navbar .nav-links li {
     margin: 0 10px;
-	display: inline;
+    display: inline;
 }
 
 /* Rimuove i puntatori della lista, il padding e i margini di default del menu di navigazione */
