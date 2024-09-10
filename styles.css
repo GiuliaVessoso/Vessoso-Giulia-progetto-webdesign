@@ -436,7 +436,7 @@ footer a {
         transition: max-height 0.5s ease-in-out;  /* Aggiunge transizione fluida */
         position: absolute;
         width: 100%;
-        top: 100px;
+        top: 60px;
         left: 0;
         background-color: white;
         z-index: 999;
@@ -445,6 +445,7 @@ footer a {
 
     /* Quando è attiva, espande il menu */
     .navbar .nav-links.active {
+        top:100px;
         max-height: 300px;  /* Puoi regolare l'altezza massima in base al numero di link */
     }
 
