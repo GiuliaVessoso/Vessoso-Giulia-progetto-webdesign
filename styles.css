@@ -77,9 +77,12 @@ header{
 	margin-top: 200px;
 }
 */
-/* Nascondi la sezione recensioni per dispositivi mobili */
-#esperienze {
-    display: block; /* Mostra la sezione recensioni per default */
+
+.slider-section {
+    display: none; /* Mostra la sezione recensioni per default */
+}
+.sezioneesperienzedeskto{
+	display: block;
 }
 
 
@@ -480,25 +483,24 @@ footer a {
 
 /* Nascondi la sezione recensioni su dispositivi mobili */
 @media (max-width: 768px) {
-   .sezionesperienzedesktop {
-        display: none;
-    }
-    
-    .slider-section {
-        display: block; /* Mostra lo slider sui dispositivi mobili */
-    }
+	.slider-section {
+	    	display: block;
+	}
+	.sezioneesperienzedeskto{
+		display: none;
+	}
 }
 
-/* Nascondi lo slider sui dispositivi più grandi */
+/* Nascondi lo slider sui dispositivi più grandi
 @media (min-width: 769px) {
     .slider-section {
         display: none;
     }
-	 .sezionesperienzedesktop {
+    .sezionesperienzedesktop {
         display: block;
-    }
-    
+    }  
 }
+ */
 /* Stili per la visualizzazione su dispositivi mobili */
 @media (max-width: 768px) {
     .how-it-works {
