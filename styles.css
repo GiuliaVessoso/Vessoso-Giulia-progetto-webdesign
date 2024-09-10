@@ -480,7 +480,7 @@ footer a {
 
 /* Nascondi la sezione recensioni su dispositivi mobili */
 @media (max-width: 768px) {
-    #esperienze {
+   .sezionesperienzedesktop {
         display: none;
     }
     
@@ -494,6 +494,10 @@ footer a {
     .slider-section {
         display: none;
     }
+	 .sezionesperienzedesktop {
+        display: block;
+    }
+    
 }
 /* Stili per la visualizzazione su dispositivi mobili */
 @media (max-width: 768px) {
