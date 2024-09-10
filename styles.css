@@ -592,6 +592,31 @@ footer a {
         display: none;
     }
 }
+
+@media screen and (max-width: 768px) {
+    /* Rimuove la posizione assoluta del testo nello slider su mobile */
+    .swiper-slide p {
+        position: static;
+        transform: none;
+        bottom: 0;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;  /* Allinea il testo al centro */
+        color: #000;  /* Cambia il colore del testo a nero */
+        background: none;  /* Rimuove lo sfondo */
+    }
+
+    /* Riduci leggermente il padding del testo per un aspetto più pulito su mobile */
+    .swiper-slide p {
+        padding: 15px 0;
+    }
+
+    /* Optional: puoi aggiungere un margine superiore per distanziare il testo dallo slider */
+    .swiper-slide {
+        margin-bottom: 10px; /* Distanzia lo slider dal testo */
+    }
+}
+
         
 @media (max-width: 480px) {
             .content div {
