@@ -23,12 +23,12 @@ header{
 	z-index: 999;
 }
 .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding: 15px;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-between;
+    	align-items: center;
+    	background-color: #fff;
+    	padding: 15px;
 }
 
 /* Dimensione dell'immagine del logo nell'intestazione */
@@ -216,8 +216,10 @@ header{
         
         h2 {
             color: #ec1c89;
-	    
         }
+	#esperienze h2{
+		margin-top: 150px;
+	}
         /* Colore dei titoli h2 */
         
         .content {
