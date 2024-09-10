@@ -277,6 +277,21 @@
     });
 </script>
 
+<script>
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetElement = document.querySelector(this.getAttribute('href'));
+        const offset = 150; // Altezza del menu fisso
+
+        window.scrollTo({
+            top: targetElement.offsetTop - offset,
+            behavior: 'smooth'
+        });
+    });
+});
+	</script>
 
 
 	
