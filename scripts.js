@@ -1,48 +1,50 @@
-// Funzione per aprire/chiudere il menu
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
+var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1, // Numero di slide visibili alla volta
+        loop: true, // Abilita il looping continuo
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 3000, // Intervallo tra una slide e l'altra (in millisecondi)
+            disableOnInteraction: false, // Continua l'autoplay anche dopo interazioni
+        },
+    });
+
+	
+
+    // Seleziona l'icona del menu e il menu stesso
     const menuIcon = document.querySelector('.menu-icon');
-    
-    navLinks.classList.toggle('active');
+    const navLinks = document.querySelector('.nav-links');
+    const navLinksItems = document.querySelectorAll('.nav-links li');
 
-    // Cambia l'icona da hamburger a X
-    if (navLinks.classList.contains('active')) {
-        menuIcon.innerHTML = '&#10006;'; // X
-    } else {
-        menuIcon.innerHTML = '&#9776;';  // Hamburger (☰)
-    }
-    
-    console.log('Menu toggled!');  // Messaggio di controllo per verificare il click
-}
+    // Funzione per aprire/chiudere il menu
+    menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
 
-// Aggiungi l'evento click all'icona del menu
-const menuIcon = document.querySelector('.menu-icon');
-if (menuIcon) {
-    menuIcon.addEventListener('click', toggleMenu);
-}
-
-// Mostra il popup quando la pagina è completamente caricata
-window.addEventListener('load', function() {
-    var popup = document.getElementById('discount-popup');
-    var closeButton = document.querySelector('.close-btn');
-    
-    if (popup) {
-        popup.style.display = 'flex'; // Mostra il popup
-        
-        // Chiudi il popup quando si clicca sul pulsante di chiusura
-        if (closeButton) {
-            closeButton.addEventListener('click', function() {
-                popup.style.display = 'none';
-            });
-        }
-        
-        // Chiudi il popup quando si clicca fuori dal contenuto del popup
-        window.addEventListener('click', function(event) {
-            if (event.target === popup) {
-                popup.style.display = 'none';
-            }
+    // Funzione per chiudere il menu quando viene cliccato un link
+    navLinksItems.forEach(item => {
+        item.addEventListener('click', () => {
+            navLinks.classList.remove('active');
         });
-    }
+    });
+
+
+
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetElement = document.querySelector(this.getAttribute('href'));
+        const offset = 150; // Altezza del menu fisso
+
+        window.scrollTo({
+            top: targetElement.offsetTop - offset,
+            behavior: 'smooth'
+        });
+    });
 });
+	
 
 
