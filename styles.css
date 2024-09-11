@@ -33,48 +33,48 @@ header{
 
 /* Dimensione dell'immagine del logo nell'intestazione */
 .navbar .logo img{
-    width: 80px;
-    height: auto;
-    z-index: 1001;
-    position: relative;
+	width: 80px;
+	height: auto;
+    	z-index: 1001;
+    	position: relative;
 }
 
 /* Stile del menu di navigazione, con sfondo bianco, testo centrato e padding */    
 .navbar .nav-links {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    padding-top: 10px;
-    margin: 0;
-    transition: all 0.3s ease;  /* Aggiunta una transizione per vedere il cambio */
+	list-style: none;
+    	display: flex;
+    	padding: 0;
+    	padding-top: 10px;
+    	margin: 0;
+    	transition: all 0.3s ease;  /* Aggiunta una transizione per vedere il cambio */
 }
 .navbar .nav-links li {
-    margin: 0 10px;
-    display: inline;
+	margin: 0 10px;
+    	display: inline;
 }
 
 /* Rimuove i puntatori della lista, il padding e i margini di default del menu di navigazione */
 
 .navbar .nav-links a {
-    color: #ec1c89;
-    text-decoration: none;
-    font-size: 24px;
+	color: #ec1c89;
+	text-decoration: none;
+    	font-size: 24px;
 }
 .navbar .nav-links a:hover {
-    color: black;
+    	color: black;
 }
 
 .navbar .menu-icon {
-    display: none;
-    font-size: 28px;
-    color: #ec1c89;
-    cursor: pointer;
+	display: none;
+	font-size: 28px;
+    	color: #ec1c89;
+    	cursor: pointer;
 }
 
 /*SLIDER*/
 
 .slider-section {
-    display: none; /* Mostra la sezione recensioni per default */
+	display: none; /* Mostra la sezione recensioni per default */
 }
 .sezionesperienzedesktop{
 	display: block;
@@ -83,222 +83,228 @@ header{
 
 /* Stile per il contenitore dello slider */
 .swiper-container {
-    position: relative;
-    max-height: 450px; /* Imposta l'altezza massima del contenitore */
-    overflow: hidden; /* Nasconde il contenuto che esce dal contenitore */
+	position: relative;
+    	max-height: 450px; /* Imposta l'altezza massima del contenitore */
+    	overflow: hidden; /* Nasconde il contenuto che esce dal contenitore */
 }
 
 /* Stile per le slide dello slider */
 .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /* Le slide riempiono l'altezza del contenitore */
+	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	height: 100%; /* Le slide riempiono l'altezza del contenitore */
 }
 
 /* Stile per le immagini all'interno delle slide */
 .swiper-slide img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover; /* Adatta l'immagine senza distorcere */
+	max-width: 100%;
+    	max-height: 100%;
+    	object-fit: cover; /* Adatta l'immagine senza distorcere */
 }
 
 /* Stile per il testo all'interno delle slide */
 .swiper-slide p {
-    position: absolute;
-    bottom: 10px; /* Spazio dal fondo del contenitore */
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff; /* Colore del testo, modifica se necessario */
-    background: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente per il testo */
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 10; /* Assicura che il testo sia sopra le immagini */
+	position: absolute;
+    	bottom: 10px; /* Spazio dal fondo del contenitore */
+    	left: 50%;
+    	transform: translateX(-50%);
+    	color: #fff; /* Colore del testo, modifica se necessario */
+    	background: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente per il testo */
+    	padding: 10px;
+    	border-radius: 5px;
+    	z-index: 10; /* Assicura che il testo sia sopra le immagini */
 }
 
 
 /* Stile per i puntini di paginazione */
 .swiper-pagination {
-    position: absolute;
-    bottom: 10px; /* Spazio dal fondo del contenitore dello slider */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
+	position: absolute;
+    	bottom: 10px; /* Spazio dal fondo del contenitore dello slider */
+    	left: 50%;
+    	transform: translateX(-50%);
+    	z-index: 10;
 }
 
 /* Stile per i bottoni di navigazione */
 .swiper-button-next, .swiper-button-prev {
-    color: #fff; /* Colore dei bottoni */
+    	color: #fff; /* Colore dei bottoni */
 }
 
 /* Stile per la sezione "Come Funziona" */
 .how-it-works {
-    margin-top: 20px; /* Spazio sopra la sezione "Come Funziona" */
+	margin-top: 20px; /* Spazio sopra la sezione "Come Funziona" */
 }
 
 /* Stili per la paginazione */
 .swiper-pagination {
-    bottom: 10px;
+	bottom: 10px;
 }
 
 /* Stili per il popup */
 .popup {
-    display: none; /* Nascondi il popup per default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Sfondo scuro trasparente */
-    z-index: 1000; /* Sovrappone al resto del contenuto */
-    align-items: center; /* Centra il contenuto verticalmente */
-    justify-content: center; /* Centra il contenuto orizzontalmente */
+	display: none; /* Nascondi il popup per default */
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 100%;
+    	background: rgba(0, 0, 0, 0.5); /* Sfondo scuro trasparente */
+    	z-index: 1000; /* Sovrappone al resto del contenuto */
+    	align-items: center; /* Centra il contenuto verticalmente */
+    	justify-content: center; /* Centra il contenuto orizzontalmente */
 }
 
 .popup-content {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
+    	background: #fff;
+    	padding: 20px;
+    	border-radius: 10px;
+    	width: 80%;
+    	max-width: 500px;
+    	text-align: center;
 }
 
 .popup-content h1 {
-    color: #ec1c89;
-    font-size: 24px;
-    margin-bottom: 10px;
+    	color: #ec1c89;
+    	font-size: 24px;
+    	margin-bottom: 10px;
 }
 
 .popup-content p {
-    color: #ec1c89;
-    font-size: 16px;
-    margin-bottom: 10px;
+    	color: #ec1c89;
+    	font-size: 16px;
+    	margin-bottom: 10px;
 }
 
 .popup-content p strong {
-    color: #ec1c89;
+    	color: #ec1c89;
 }
 
 .popup-content .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #ec1c89;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+    	display: inline-block;
+	padding: 10px 20px;
+    	background: #ec1c89;
+    	color: #fff;
+    	text-decoration: none;
+    	border-radius: 5px;
 }
 
 .popup-content .btn:hover {
-    background: #d01a7e; /* Colore leggermente più scuro per l'hover */
+	background: #d01a7e; /* Colore leggermente più scuro per l'hover */
 }
 
 .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    color: #ec1c89;
+	position: absolute;
+    	top: 10px;
+    	right: 10px;
+    	font-size: 24px;
+    	cursor: pointer;
+	    color: #ec1c89;
 }
 
 .close-btn:hover {
-    color: #d01a7e;
+	color: #d01a7e;
 }
 
 /*CORPO*/
-        section {
-            padding: 50px 0;
-            text-align: center;
-        }
-        /* Stile delle sezioni della pagina: padding e testo centrato */
+
+section {
+        padding: 50px 0;
+	text-align: center;
+}
+
+/* Stile delle sezioni della pagina: padding e testo centrato */
         
-        h2 {
-            color: #ec1c89;
-        }
-	#esperienze h2{
-		margin-top: 150px;
-	}
-        /* Colore dei titoli h2 */
+h2 {
+        color: #ec1c89;
+}
+#esperienze h2{
+	margin-top: 150px;
+}
+
+/* Colore dei titoli h2 */
         
-        .content {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        /* Stile del contenitore del contenuto: display flessibile, distribuzione degli elementi e wrapping */
+.content {
+	display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+}
+
+/* Stile del contenitore del contenuto: display flessibile, distribuzione degli elementi e wrapping */
         
-        .content div {
-            width: 30%;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        /* Stile dei div all'interno del contenitore del contenuto: larghezza, margine e testo centrato */
+.content div {
+	width: 30%;
+        margin-bottom: 30px;
+        text-align: center;
+}
         
-        .content img {
-            max-width: 100%;
-            height: auto;
-        }
-        /* Dimensione delle immagini nel contenuto: larghezza massima e altezza proporzionale */
+/* Stile dei div all'interno del contenitore del contenuto: larghezza, margine e testo centrato */
         
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
+.content img {
+	max-width: 100%;
+        height: auto;
+}
+
+/* Dimensione delle immagini nel contenuto: larghezza massima e altezza proporzionale */
+        
+footer {
+	background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+}
 footer a {
 	color: #ec1c89;
 }
-        /* Stile del footer: colore di sfondo, colore del testo, padding e testo centrato */
+/* Stile del footer: colore di sfondo, colore del testo, padding e testo centrato */
         
 
 /* Stili per la versione desktop */
 .how-it-works {
-    background-color: #fff;
-    padding: 50px 20px;
-    text-align: center;
+	background-color: #fff;
+    	padding: 50px 20px;
+    	text-align: center;
 }
 
 .how-it-works h2 {
-    color: #ec1c89;
-    margin-bottom: 40px;
+	color: #ec1c89;
+    	margin-bottom: 40px;
 }
 
 .steps {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+	display: flex;
+    	justify-content: space-around;
+    	flex-wrap: wrap;
 }
 
 .step {
-    flex: 1;
-    min-width: 200px;
-    margin: 10px;
-    text-align: center;
+	flex: 1;
+    	min-width: 200px;
+    	margin: 10px;
+    	text-align: center;
 }
 
 .step-number {
-    font-size: 36px;
-    color: #ec1c89;
-    display: block;
-    margin-bottom: 10px;
+	font-size: 36px;
+    	color: #ec1c89;
+    	display: block;
+    	margin-bottom: 10px;
 }
 
 .step h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+	font-size: 24px;
+    	margin-bottom: 10px;
 }
 
 .step p {
-    font-size: 18px;
-    color: #333;
+	font-size: 18px;
+    	color: #333;
 }
 
 
 
- .booking-box {
+.booking-box {
         background-color: #fff;
         padding: 40px;
         max-width: 600px;
@@ -306,28 +312,28 @@ footer a {
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         text-align: left;
-    }
-    .booking-box h2 {
+}
+.booking-box h2 {
         color: #ec1c89;
         margin-bottom: 20px;
         text-align: center;
-    }
-    .booking-box label {
+}
+.booking-box label {
         font-size: 18px;
         color: #333;
         display: block;
         margin-bottom: 5px;
-    }
-    .booking-box select,
-    .booking-box input[type="date"],
-    .booking-box textarea {
+}
+.booking-box select,
+.booking-box input[type="date"],
+.booking-box textarea {
         width: 100%;
         padding: 10px;
         margin-bottom: 20px;
         border: 1px solid #ccc;
         border-radius: 4px;
-    }
-    .booking-box button {
+}
+.booking-box button {
         background-color: #ec1c89;
         color: #fff;
         padding: 10px 20px;
@@ -338,44 +344,46 @@ footer a {
         display: block;
         width: 100%;
         text-align: center;
-    }
-    .booking-box button:hover {
+}
+.booking-box button:hover {
         background-color: #d81b74;
-    }
-  .contact-info {
+}
+.contact-info {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         margin-top: 20px;
-    }
-    .social-media {
+}
+.social-media {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
-    }
+}
+
 /* Contenitore delle informazioni di contatto */
 .contact-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
+	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	flex-direction: column;
+    	margin-top: 20px;
 }
 
 /* Social media (Instagram) */
 .social-media, .phone-number {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+	display: flex;
+    	align-items: center;
+    	margin-bottom: 10px;
 }
 
 /* Logo Instagram e icona della cornetta */
 .social-logo, .phone-logo {
-    width: 30px; /* Dimensione dell'icona */
-    height: auto;
-    margin-right: 10px;
+	width: 30px; /* Dimensione dell'icona */
+    	height: auto;
+    	margin-right: 10px;
 }
+
 /* Definizione dell'animazione di rimbalzo */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
@@ -390,49 +398,51 @@ footer a {
 	
 }
 .social-logo, .phone-logo {
-    width: 50px; /* Dimensione iniziale dell'icona */
-    height: auto; /* Mantiene le proporzioni dell'icona */
-    animation: bounce 2s infinite; /* Applica l'animazione di rimbalzo per 2 secondi, ripetuta all'infinito */
+	width: 50px; /* Dimensione iniziale dell'icona */
+    	height: auto; /* Mantiene le proporzioni dell'icona */
+    	animation: bounce 2s infinite; /* Applica l'animazione di rimbalzo per 2 secondi, ripetuta all'infinito */
 }
+
 /* Stile del testo per nome utente Instagram e numero di telefono */
 .social-media p, .phone-number p {
-    font-size: 18px;
-    color: #333;
+	font-size: 18px;
+    	color: #333;
 }
+
 /* Menu a tendina per mobile */
 .menu-toggle {
-    display: none; /* Nasconde il menu toggle di default */
-    flex-direction: column;
-    cursor: pointer;
+	display: none; /* Nasconde il menu toggle di default */
+    	flex-direction: column;
+    	cursor: pointer;
 }
 
 .menu-toggle .bar {
-    height: 3px;
-    width: 25px;
-    background-color: #333;
-    margin: 4px 0;
-    transition: all 0.3s ease;
+	height: 3px;
+    	width: 25px;
+    	background-color: #333;
+    	margin: 4px 0;
+    	transition: all 0.3s ease;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	list-style: none;
+    	padding: 0;
+    	margin: 0;
 	z-index: 5
 }
 
 .cart-icon-container {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+	display: flex;
+    	align-items: center;
+    	margin-left: auto;
 }
 
 .cart-icon {
-    font-size: 24px;
-    color: #ec1c89;
+	font-size: 24px;
+    	color: #ec1c89;
 }
 
 /*RESPONSIVE*/
@@ -442,8 +452,8 @@ footer a {
         flex-direction: row;
     }
 
-    /* Menu inizialmente nascosto, altezza 0 per permettere la transizione */
-    .navbar .nav-links {
+/* Menu inizialmente nascosto, altezza 0 per permettere la transizione */
+.navbar .nav-links {
         max-height: 0;  /* Altezza iniziale nulla */
         overflow: hidden;  /* Nasconde il contenuto */
         transition: max-height 0.5s ease-in-out;  /* Aggiunge transizione fluida */
@@ -457,20 +467,20 @@ footer a {
 	padding: 0;
 	marging: 0;
 	align-items: left;
-    }
+}
 
-    /* Quando è attiva, espande il menu */
-    .navbar .nav-links.active {
+/* Quando è attiva, espande il menu */
+.navbar .nav-links.active {
         top:100px;
 	z-index: 999;
 	max-height: 100vh;  /* Puoi regolare l'altezza massima in base al numero di link */
 	padding-top: 10px;
-    }
-    .navbar .nav-links li {
+}
+.navbar .nav-links li {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-    .navbar .menu-icon {
+.navbar .menu-icon {
         display: block;
         z-index: 1000;
         position: relative;
@@ -480,153 +490,143 @@ footer a {
 /* Nascondi la sezione recensioni su dispositivi mobili */
 @media (max-width: 768px) {
 	.slider-section {
-	    	display: block;
+		display: block;
 	}
 	.sezionesperienzedesktop{
 		display: none;
-	}
+	   }
 }
 
-/* Nascondi lo slider sui dispositivi più grandi
-@media (min-width: 769px) {
-    .slider-section {
-        display: none;
-    }
-    .sezionesperienzedesktop {
-        display: block;
-    }  
-}
- */
 /* Stili per la visualizzazione su dispositivi mobili */
 @media (max-width: 768px) {
-    .how-it-works {
-        padding: 70px;
-        text-align: left;
-    }
-
-    .steps {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .step {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 20px; /* Spazio tra i passi */
-        text-align: left; /* Allinea il testo a sinistra */
-    }
-
-    .step-number {
-        font-size: 24px;
-        margin-right: 15px; /* Spazio tra il numero e la spiegazione */
-        margin-bottom: 0; /* Rimuove il margine inferiore */
-    }
-
-    .step h3 {
-        font-size: 20px;
-        margin: 0;
-    }
-
-    .step p {
-        font-size: 16px;
-        margin-top: 5px;
-    }
+	.how-it-works {
+	        padding: 70px;
+	        text-align: left;
+	}
+	
+	.steps {
+	        display: flex;
+	        flex-direction: column;
+	}
+	
+	.step {
+	        display: flex;
+	        align-items: flex-start;
+	        margin-bottom: 20px; /* Spazio tra i passi */
+	        text-align: left; /* Allinea il testo a sinistra */
+	}
+	
+	.step-number {
+	        font-size: 24px;
+	        margin-right: 15px; /* Spazio tra il numero e la spiegazione */
+	        margin-bottom: 0; /* Rimuove il margine inferiore */
+	}
+	
+	.step h3 {
+	        font-size: 20px;
+	        margin: 0;
+	}
+	
+	.step p {
+	        font-size: 16px;
+	        margin-top: 5px;
+	    }
 }
 @media (max-width: 768px) {
-            nav ul li {
-                display: block;
-                margin-bottom: 10px;
- 	}
-            /* Stile per schermi con larghezza massima di 768px: gli elementi del menu diventano verticali e con margine inferiore */
-            
-            nav ul li a {
-                font-size: 20px;
-            }
-            /* Riduce la dimensione del testo nei link del menu */
-            
-            .cart-icon {
-                display: block;
-                margin: 10px auto;
-            }
-            /* L'icona del carrello diventa un elemento di blocco centrato con margine superiore e inferiore */
-            
-            .content div {
-                width: 45%;
-            }
-            /* Aumenta la larghezza dei div del contenuto al 45% del contenitore */
-
+	nav ul li {
+	        display: block;
+	        margin-bottom: 10px;
+	 }
+	
+	/* Stile per schermi con larghezza massima di 768px: gli elementi del menu diventano verticali e con margine inferiore */
+	nav ul li a {
+	        font-size: 20px;
+	}
+	
+	/* Riduce la dimensione del testo nei link del menu */
+	.cart-icon {
+	        display: block;
+	        margin: 10px auto;
+	}
+	
+	/* L'icona del carrello diventa un elemento di blocco centrato con margine superiore e inferiore */
+	.content div {
+	        width: 45%;
+	}
+	
+	/* Aumenta la larghezza dei div del contenuto al 45% del contenitore */
 	.toggle_btn{
 		display: block;
 	}
-.dropdown {
-        display: none;
-    }
-    .dropdown.open {
-        display: block;
-    }
-
-    .nav-links {
-        display: none; /* Nasconde il menu principale */
-        flex-direction: column;
-        width: 100%;
-        background-color: #fff;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        z-index: 1;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .cart-icon-container {
-        display: none;
-    }
+	.dropdown {
+	        display: none;
+	}
+	.dropdown.open {
+	        display: block;
+	}
+	
+	.nav-links {
+	        display: none; /* Nasconde il menu principale */
+	        flex-direction: column;
+	        width: 100%;
+	        background-color: #fff;
+	        position: absolute;
+	        top: 60px;
+	        left: 0;
+	        z-index: 1;
+	}
+	
+	.nav-links.active {
+	        display: flex;
+	}
+	
+	.nav-links li {
+	        margin: 10px 0;
+	}
+	
+	.cart-icon-container {
+	        display: none;
+	    }
 }
 
 @media screen and (max-width: 768px) {
-    /* Rimuove la posizione assoluta del testo nello slider su mobile */
-    .swiper-slide p {
-        position: static;
-        transform: none;
-        bottom: 0;
-        left: 0;
-        padding: 10px 0;
-        text-align: center;  /* Allinea il testo al centro */
-        color: #000;  /* Cambia il colore del testo a nero */
-        background: none;  /* Rimuove lo sfondo */
-    }
-
-    /* Riduci leggermente il padding del testo per un aspetto più pulito su mobile */
-    .swiper-slide p {
-        padding: 15px 0;
-    }
-
-    /* Optional: puoi aggiungere un margine superiore per distanziare il testo dallo slider */
-    .swiper-slide {
-        margin-bottom: 10px; /* Distanzia lo slider dal testo */
-    }
+	/* Rimuove la posizione assoluta del testo nello slider su mobile */
+	.swiper-slide p {
+	        position: static;
+	        transform: none;
+	        bottom: 0;
+	        left: 0;
+	        padding: 10px 0;
+	        text-align: center;  /* Allinea il testo al centro */
+	        color: #000;  /* Cambia il colore del testo a nero */
+	        background: none;  /* Rimuove lo sfondo */
+	}
+	
+	/* Riduci leggermente il padding del testo per un aspetto più pulito su mobile */
+	.swiper-slide p {
+	        padding: 15px 0;
+	}
+	
+	/* Optional: puoi aggiungere un margine superiore per distanziare il testo dallo slider */
+	.swiper-slide {
+	        margin-bottom: 10px; /* Distanzia lo slider dal testo */
+	}
 }
 
         
 @media (max-width: 480px) {
-            .content div {
-                width: 100%;
-            }
-            /* Per schermi con larghezza massima di 480px: i div del contenuto occupano il 100% del contenitore */
-            
-            nav ul li a {
-                font-size: 18px;
-            }
-            /* Riduce ulteriormente la dimensione del testo nei link del menu */
-            
-            section {
-                padding: 30px 0;
-            }
-            /* Riduce il padding delle sezioni */
-        }
+	.content div {
+	         width: 100%;
+	}
+	 /* Per schermi con larghezza massima di 480px: i div del contenuto occupano il 100% del contenitore */
+	            
+	nav ul li a {
+	        font-size: 18px;
+	}
+	/* Riduce ulteriormente la dimensione del testo nei link del menu */
+	            
+	section {
+	        padding: 30px 0;
+	}
+	/* Riduce il padding delle sezioni */
+}
