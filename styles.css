@@ -120,7 +120,7 @@ header{
 /* Stile per i puntini di paginazione */
 .swiper-pagination {
 	position: absolute;
-    	bottom: 10px; /* Spazio dal fondo del contenitore dello slider */
+    	bottom: 40px; /* Spazio dal fondo del contenitore dello slider */
     	left: 50%;
     	transform: translateX(-50%);
     	z-index: 10;
